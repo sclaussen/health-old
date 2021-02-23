@@ -23,6 +23,7 @@ foo.js
 foo
 TAGS
 test/cli/data/testData
+node_modules/**
 .build/commit.log
 lib/schema.js
 package-lock.json
