@@ -1,0 +1,50 @@
+[
+    {
+        ingredient: 'Coconut Oil (365)',
+        quantity: 1
+    },
+    {
+        ingredient: 'Extra Virgin Olive Oil (365)',
+        quantity: 1
+    },
+    {
+        ingredient: 'Fish Oil (Carlson)',
+        quantity: 1
+    },
+    {
+        ingredient: 'Eggs (org) (Vital)',
+        quantity: 3
+    },
+    {
+        ingredient: 'Arugula (365)',
+        quantity: 30
+    },
+    {
+        ingredient: 'Kale (org) (365)',
+        quantity: 60
+    },
+    {
+        ingredient: 'Carrots (365)',
+        quantity: 28
+    },
+    {
+        ingredient: 'Mushrooms (white) (365)',
+        quantity: 100
+    },
+    {
+        ingredient: 'Radish (365)',
+        quantity: 28
+    },
+    {
+        ingredient: 'Salsa (Casa Chicas)',
+        quantity: 3
+    },
+    {
+        ingredient: 'Serrano Pepper (365)',
+        quantity: 2
+    },
+    {
+        ingredient: 'Avocado (haas) (365)',
+        quantity: 1
+    },
+]

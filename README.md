@@ -22,7 +22,7 @@ Eliminate the no brainers - foods containing:
 - fatty oils that use heat and/or chemical extraction (vegetable,
   soybean, and corn oils), or any food containing these oils as an
   ingredient
-- tans fats
+- trans fats
 - added nitrites or nitrates
 - processed foods
 
@@ -145,17 +145,25 @@ Some others:
 
 Here's a list of items I found helpful:
 - [Food Scale](https://www.amazon.com/gp/product/B07S6F6LHQ/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1): I don't know how you get started without one
-- [Food Containers](https://www.amazon.com/gp/product/B077G76C6J/ref=ppx_yo_dt_b_asin_title_o09_s00?ie=UTF8&psc=1): I happen to find these extremely useful
 - [Avocado Slicer](https://www.amazon.com/gp/product/B0088LR592/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1): If you're eating healthy Keto you're consuming a lot of avocado and this slicer works wonders for getting the avocado out
+- [Water Bottles](https://www.amazon.com/NALGENE-Tritan-1-Quart-Narrow-BPA-Free/dp/B01C7UX7LY/ref=sr_1_19?dchild=1&keywords=nalgene+1+liter&qid=1613844641&sr=8-19): These are my personal preference, super useful to verify you're getting adequate water per day to prevent  dehydration (and Kidney Stones).
+- [Food Containers](https://www.amazon.com/gp/product/B077G76C6J/ref=ppx_yo_dt_b_asin_title_o09_s00?ie=UTF8&psc=1): I happen to find these extremely useful
 - [Tablespoons](https://www.amazon.com/gp/product/B07HD2TZ2M/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1): I measure a lot of things in tablespoons (oil, et al) so these come in very handy
 - [Garmin Fenix 6 Pro](https://www.amazon.com/Garmin-Multisport-features-Grade-Adjusted-Guidance/dp/B07WL6QHWH/ref=sr_1_3?dchild=1&keywords=garmin+fenix+6+pro&qid=1613064969&sr=8-3): I just got this watch, great for the exercise component of getting healthy
 - [Fish Oil](https://www.amazon.com/dp/B001LF39S8/ref=twister_B0047VWYSO?_encoding=UTF8&psc=1): What I've started using to supplement Omega-3s
 
 
 
+# Spreadsheet
+
+Create a copy of my spreadsheet.  Note, you may at some point need to
+"re-merge" my spreadsheet, so keep that in mind, as I am pretty
+consistently making improvements.
+
 ## Profile Sheet
 
-Update the profile sheet.
+Update the profile sheet, relevant blanks:
+- Body composition: Necessary data for formulas, keep it updated
 
 
 
