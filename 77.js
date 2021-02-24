@@ -51,7 +51,7 @@ var FOOD_NETCARBOHYDRATES_COL = 32;
 var FOOD_PROTEIN_COL = 33;
 
 var FOOD_COLUMN_NAMES = [
-    'ingredient',
+    'name',
     'status',
     'group',
     'category',
@@ -67,23 +67,23 @@ var FOOD_COLUMN_NAMES = [
     'costlb',
     'costgram',
     'servingsize',
-    'normalized',
+    'quantitymultiplier',
     'unit',
-    'calories',
-    'fat',
-    'saturated',
-    'trans',
-    'poly',
-    'mono',
-    'cholesterol',
-    'sodium',
-    'carbohydrates',
-    'fiber',
-    'sugar',
-    'sugarplus',
-    'alcohol',
-    'netcarbohydrates',
-    'protein',
+    'servingcalories',
+    'servingfat',
+    'servingsaturated',
+    'servingtrans',
+    'servingpoly',
+    'servingmono',
+    'servingcholesterol',
+    'servingsodium',
+    'servingcarbohydrates',
+    'servingfiber',
+    'servingsugar',
+    'servingsugarplus',
+    'servingalcohol',
+    'servingnetcarbs',
+    'servingprotein',
 ];
 
 
@@ -436,7 +436,7 @@ function exportFood() {
         foods.push(ingredient);
     }
 
-    DriveApp.createFile('food.yaml', JSON.stringify(foods, null, 4));
+    DriveApp.createFile('ingredients.json', JSON.stringify(foods, null, 4));
 }
 
 
