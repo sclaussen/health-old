@@ -1,9 +1,10 @@
 - name: Avocado Oil (Chosen Foods)
+  nickname: Avocado Oil
   status: 1-Active
   group: 3-Venti
   category: 1-Oil
   store: WF
-  brand: Chosen Foods 100% Pure Avocado Oil
+  fullname: Chosen Foods 100% Pure Avocado Oil
   breakfast: true
   lunch: ""
   dinner: true
@@ -16,6 +17,7 @@
   servingsize: 13.5
   quantitymultiplier: 13.5
   unit: tbsp
+  prepare: 300
   servingcalories: 130
   servingfat: 14
   servingsaturated: 2
@@ -32,11 +34,12 @@
   servingnetcarbs: 0
   servingprotein: ""
 - name: Avocado Oil (WF)
+  nickname: Avocado Oil
   status: 1-Active
   group: 3-Venti
   category: 1-Oil
   store: WF
-  brand: 365 Expeller Pressed Cooking Oil, Avocado
+  fullname: 365 Expeller Pressed Cooking Oil, Avocado
   breakfast: true
   lunch: ""
   dinner: ""
@@ -49,6 +52,7 @@
   servingsize: 13.5
   quantitymultiplier: 13.5
   unit: tbsp
+  prepare: 300
   servingcalories: 130
   servingfat: 14
   servingsaturated: 2
@@ -65,11 +69,12 @@
   servingnetcarbs: 0
   servingprotein: ""
 - name: Coconut Oil (365)
+  nickname: Coconut Oil
   status: 1-Active
   group: 1-Small
   category: 1-Oil
   store: WF
-  brand: 365 Organic Coconut Oil - Expeller Expressed
+  fullname: 365 Organic Coconut Oil - Expeller Expressed
   breakfast: true
   lunch: ""
   dinner: ""
@@ -82,6 +87,7 @@
   servingsize: 13.06
   quantitymultiplier: 13.06
   unit: tbsp
+  prepare: 300
   servingcalories: 130
   servingfat: 14
   servingsaturated: 13
@@ -98,11 +104,12 @@
   servingnetcarbs: 0
   servingprotein: 0
 - name: Extra Virgin Olive Oil (365)
+  nickname: Olive Oil
   status: 1-Active
   group: 1-Small
   category: 1-Oil
   store: WF
-  brand: 365 Organic Extra Virgin Olive Oil - Cold Processed, Mediterranean
+  fullname: 365 Organic Extra Virgin Olive Oil - Cold Processed, Mediterranean
   breakfast: ""
   lunch: ""
   dinner: true
@@ -115,6 +122,7 @@
   servingsize: 13.3
   quantitymultiplier: 13.3
   unit: tbsp
+  prepare: 450
   servingcalories: 120
   servingfat: 14
   servingsaturated: 2
@@ -131,11 +139,12 @@
   servingnetcarbs: 0
   servingprotein: 0
 - name: Fish Oil (Carlson)
+  nickname: Fish Oil
   status: 1-Active
   group: 1-Small
   category: 1-Oil
   store: WF
-  brand: Carlson The Very Fines Fish Oil
+  fullname: Carlson The Very Fines Fish Oil
   breakfast: ""
   lunch: ""
   dinner: true
@@ -148,6 +157,7 @@
   servingsize: 4.6
   quantitymultiplier: 4.6
   unit: teasp
+  prepare: 104
   servingcalories: 40
   servingfat: 4.55
   servingsaturated: 1
@@ -164,11 +174,12 @@
   servingnetcarbs: ""
   servingprotein: ""
 - name: Beef (bottom round roast) (BB)
+  nickname: Bottom Round Roast
   status: 1-Active
   group: 2-Grande
-  category: 2-Meat
+  category: 2a-Meat
   store: BB
-  brand: Butcher Box Grass-Fed Beef Bottom Round Roast
+  fullname: Butcher Box Grass-Fed Beef Bottom Round Roast
   breakfast: ""
   lunch: ""
   dinner: true
@@ -181,6 +192,7 @@
   servingsize: 113.3980925
   quantitymultiplier: 1
   unit: grams
+  prepare: 100
   servingcalories: 150
   servingfat: 6
   servingsaturated: 3
@@ -197,11 +209,12 @@
   servingnetcarbs: 0
   servingprotein: 24
 - name: Beef (chuck roast) (BB)
+  nickname: Chuck Roast
   status: 1-Active
   group: 2-Grande
-  category: 2-Meat
+  category: 2a-Meat
   store: BB
-  brand: Butcher Box Grass Fed Beeef Boneless Chuck Roast
+  fullname: Butcher Box Grass Fed Beeef Boneless Chuck Roast
   breakfast: ""
   lunch: ""
   dinner: true
@@ -214,6 +227,7 @@
   servingsize: 113.3980925
   quantitymultiplier: 1
   unit: grams
+  prepare: 100
   servingcalories: 280
   servingfat: 21
   servingsaturated: 8
@@ -230,11 +244,12 @@
   servingnetcarbs: 0
   servingprotein: 21
 - name: Beef (chuck stew S4) (WF)
+  nickname: Chuck Stew
   status: 1-Active
   group: 2-Grande
-  category: 2-Meat
+  category: 2a-Meat
   store: WF
-  brand: Beef Chuck Stew Meat
+  fullname: Beef Chuck Stew Meat
   breakfast: ""
   lunch: ""
   dinner: true
@@ -247,6 +262,7 @@
   servingsize: 85
   quantitymultiplier: 1
   unit: grams
+  prepare: 100
   servingcalories: 105
   servingfat: 3.5
   servingsaturated: 1.4
@@ -263,11 +279,12 @@
   servingnetcarbs: ""
   servingprotein: 18
 - name: Beef (ground GF/GF) (WF)
+  nickname: Ground Beef
   status: 1-Active
   group: 3-Venti
-  category: 2-Meat
+  category: 2a-Meat
   store: WF
-  brand: 365 Organic Ground Beef 85% Lean/ 15% Fat
+  fullname: 365 Organic Ground Beef 85% Lean/ 15% Fat
   breakfast: ""
   lunch: ""
   dinner: true
@@ -280,6 +297,7 @@
   servingsize: 113.3980925
   quantitymultiplier: 1
   unit: grams
+  prepare: 100
   servingcalories: 183
   servingfat: 13
   servingsaturated: 4.9
@@ -296,11 +314,12 @@
   servingnetcarbs: 0
   servingprotein: 15.801
 - name: Beef (ground) (BB)
+  nickname: Ground Beef
   status: 1-Active
   group: 1-Small
-  category: 2-Meat
+  category: 2a-Meat
   store: BB
-  brand: Butcher Box Grass-Fed Ground Beef 85/15
+  fullname: Butcher Box Grass-Fed Ground Beef 85/15
   breakfast: ""
   lunch: ""
   dinner: true
@@ -313,6 +332,7 @@
   servingsize: 113.3980925
   quantitymultiplier: 1
   unit: grams
+  prepare: 100
   servingcalories: 240
   servingfat: 17
   servingsaturated: 7
@@ -329,11 +349,12 @@
   servingnetcarbs: 0
   servingprotein: 21
 - name: Beef (steak new york) (BB)
+  nickname: New York Steak
   status: 1-Active
   group: 2-Grande
-  category: 2-Meat
+  category: 2a-Meat
   store: BB
-  brand: Butcher Box New York Strip
+  fullname: Butcher Box New York Strip
   breakfast: ""
   lunch: ""
   dinner: true
@@ -346,6 +367,7 @@
   servingsize: 113.3980925
   quantitymultiplier: 1
   unit: grams
+  prepare: 100
   servingcalories: 220
   servingfat: 14
   servingsaturated: 7
@@ -361,12 +383,48 @@
   servingalcohol: ""
   servingnetcarbs: 0
   servingprotein: 23
-- name: Beef (steak top sirloin) (BB)
+- name: Beef (steak ranch) (BB)
+  nickname: Ranch Steak
   status: 1-Active
   group: 2-Grande
-  category: 2-Meat
+  category: 2a-Meat
   store: BB
-  brand: Butcher Box Top Sirloin Strip
+  fullname: Butcher Box Ranch Steak
+  breakfast: ""
+  lunch: ""
+  dinner: true
+  nutrientsurl: ""
+  retailurl: https://www.butcherbox.com/member
+  cost: ""
+  costounce: ""
+  costlb: 10.5
+  costgram: 0.0234375
+  servingsize: 170
+  quantitymultiplier: 1
+  unit: grams
+  prepare: 100
+  servingcalories: 280
+  servingfat: 16
+  servingsaturated: 6
+  servingtrans: ""
+  servingpoly: ""
+  servingmono: ""
+  servingcholesterol: 110
+  servingsodium: 130
+  servingcarbohydrates: ""
+  servingfiber: ""
+  servingsugar: ""
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: ""
+  servingprotein: 33
+- name: Beef (steak top sirloin) (BB)
+  nickname: Top Sirloin Steak
+  status: 1-Active
+  group: 2-Grande
+  category: 2a-Meat
+  store: BB
+  fullname: Butcher Box Top Sirloin Strip
   breakfast: ""
   lunch: ""
   dinner: true
@@ -379,6 +437,7 @@
   servingsize: 113.3980925
   quantitymultiplier: 1
   unit: grams
+  prepare: 100
   servingcalories: 150
   servingfat: 6
   servingsaturated: 3
@@ -395,11 +454,12 @@
   servingnetcarbs: 0
   servingprotein: 24
 - name: Beef (stew) (BB)
+  nickname: Beef Stew
   status: 1-Active
   group: 2-Grande
-  category: 2-Meat
+  category: 2a-Meat
   store: BB
-  brand: Butcher Box Grass-Fed Beef Stew Meet
+  fullname: Butcher Box Grass-Fed Beef Stew Meet
   breakfast: ""
   lunch: ""
   dinner: true
@@ -412,6 +472,7 @@
   servingsize: 113.3980925
   quantitymultiplier: 1
   unit: grams
+  prepare: 100
   servingcalories: 150
   servingfat: 6
   servingsaturated: 3
@@ -428,11 +489,12 @@
   servingnetcarbs: 0
   servingprotein: 24
 - name: Beef (tri tip S4) (WF)
+  nickname: Tri Tip
   status: 1-Active
   group: 3-Venti
-  category: 2-Meat
+  category: 2a-Meat
   store: WF
-  brand: WF Beef Tri Tip Roast
+  fullname: WF Beef Tri Tip Roast
   breakfast: ""
   lunch: ""
   dinner: true
@@ -445,6 +507,7 @@
   servingsize: 85.048569375
   quantitymultiplier: 1
   unit: grams
+  prepare: 100
   servingcalories: 179
   servingfat: 9
   servingsaturated: ""
@@ -461,11 +524,12 @@
   servingnetcarbs: 0
   servingprotein: 22.14
 - name: Chicken (boneless skinless breast) (BB)
+  nickname: Chicken
   status: 1-Active
   group: 1-Small
-  category: 2-Meat
+  category: 2a-Meat
   store: BB
-  brand: Butcher Box Boneless Skinless Chicken Breast
+  fullname: Butcher Box Boneless Skinless Chicken Breast
   breakfast: ""
   lunch: ""
   dinner: true
@@ -478,6 +542,7 @@
   servingsize: 113.3980925
   quantitymultiplier: 1
   unit: grams
+  prepare: 100
   servingcalories: 120
   servingfat: 1.5
   servingsaturated: ""
@@ -493,144 +558,13 @@
   servingalcohol: ""
   servingnetcarbs: 0
   servingprotein: 26
-- name: Eggs (org 18) (Vital)
-  status: 1-Active
-  group: 3-Venti
-  category: 2-Meat
-  store: WF
-  brand: Vital Farms Organic Pasture-raised Eggs
-  breakfast: true
-  lunch: ""
-  dinner: ""
-  nutrientsurl: https://www.amazon.com/Vital-Farms-Large-Organic-Count/dp/B089C8JT7B/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=eggs+vital&qid=1609695941&s=wholefoods&sr=1-1
-  retailurl: https://www.amazon.com/Vital-Farms-Pasture-Organic-Raised/dp/B00M1QWODW/ref=sr_1_6?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=vital+butter&qid=1613331143&s=wholefoods&sr=1-6
-  cost: 6.99
-  costounce: 0.33027194440625074
-  costlb: 5.284351110500012
-  costgram: 0.011795426585937527
-  servingsize: 50
-  quantitymultiplier: 50
-  unit: eggs
-  servingcalories: 70
-  servingfat: 5
-  servingsaturated: 1.5
-  servingtrans: ""
-  servingpoly: ""
-  servingmono: ""
-  servingcholesterol: 185
-  servingsodium: 70
-  servingcarbohydrates: ""
-  servingfiber: ""
-  servingsugar: ""
-  servingsugarplus: ""
-  servingalcohol: ""
-  servingnetcarbs: 0
-  servingprotein: 6
-- name: Eggs (org) (Vital)
-  status: 1-Active
-  group: 1-Small
-  category: 2-Meat
-  store: WF
-  brand: Vital Farms Organic Pasture-raised Eggs
-  breakfast: true
-  lunch: ""
-  dinner: ""
-  nutrientsurl: https://www.amazon.com/Vital-Farms-Large-Organic-Count/dp/B089C8JT7B/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=eggs+vital&qid=1609695941&s=wholefoods&sr=1-1
-  retailurl: https://www.amazon.com/Vital-Farms-Pasture-Organic-Raised/dp/B00M1QWODW/ref=sr_1_6?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=vital+butter&qid=1613331143&s=wholefoods&sr=1-6
-  cost: 6.99
-  costounce: 0.33027194440625074
-  costlb: 5.284351110500012
-  costgram: 0.011795426585937527
-  servingsize: 50
-  quantitymultiplier: 50
-  unit: eggs
-  servingcalories: 70
-  servingfat: 5
-  servingsaturated: 1.5
-  servingtrans: ""
-  servingpoly: ""
-  servingmono: ""
-  servingcholesterol: 185
-  servingsodium: 70
-  servingcarbohydrates: ""
-  servingfiber: ""
-  servingsugar: ""
-  servingsugarplus: ""
-  servingalcohol: ""
-  servingnetcarbs: 0
-  servingprotein: 6
-- name: Eggs (Petes)
-  status: 1-Active
-  group: 3-Venti
-  category: 2-Meat
-  store: WF
-  brand: Pete and Gerry's Organic Large Eggs, 12 eggs
-  breakfast: true
-  lunch: ""
-  dinner: ""
-  nutrientsurl: https://products.wholefoodsmarket.com/product/pete-and-gerrys-organic-large-eggs-0cbf9c
-  retailurl: https://www.amazon.com/Pete-Gerrys-Organic-Cage-Free-Omega-3/dp/B00F0ZNK8E/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=pete%27s+eggs&qid=1613324350&s=wholefoods&sr=1-1
-  cost: 5.99
-  costounce: 0.2830227391979173
-  costlb: 4.528363827166677
-  costgram: 0.01010795497135419
-  servingsize: 50
-  quantitymultiplier: 50
-  unit: eggs
-  servingcalories: 70
-  servingfat: 5
-  servingsaturated: 1.5
-  servingtrans: ""
-  servingpoly: ""
-  servingmono: ""
-  servingcholesterol: 185
-  servingsodium: 70
-  servingcarbohydrates: 0
-  servingfiber: ""
-  servingsugar: ""
-  servingsugarplus: ""
-  servingalcohol: ""
-  servingnetcarbs: 0
-  servingprotein: 6
-- name: Eggs (Vital)
-  status: 1-Active
-  group: 3-Venti
-  category: 2-Meat
-  store: WF
-  brand: Vital Farms Pasture-raised Eggs
-  breakfast: true
-  lunch: ""
-  dinner: ""
-  nutrientsurl: https://www.amazon.com/Vital-Farms-Large-Organic-Count/dp/B089C8JT7B/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=eggs+vital&qid=1609695941&s=wholefoods&sr=1-1
-  retailurl: https://www.amazon.com/VITAL-FARMS-Large-Grade-Eggs/dp/B0849MZ45Y/ref=sr_1_10?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=vital+eggs+18&qid=1613791722&s=wholefoods&sr=1-10
-  cost: 6.99
-  costounce: 0.33027194440625074
-  costlb: 5.284351110500012
-  costgram: 0.011795426585937527
-  servingsize: 50
-  quantitymultiplier: 50
-  unit: eggs
-  servingcalories: 70
-  servingfat: 5
-  servingsaturated: 1.5
-  servingtrans: ""
-  servingpoly: ""
-  servingmono: ""
-  servingcholesterol: 185
-  servingsodium: 70
-  servingcarbohydrates: ""
-  servingfiber: ""
-  servingsugar: ""
-  servingsugarplus: ""
-  servingalcohol: ""
-  servingnetcarbs: 0
-  servingprotein: 6
 - name: Fish (cod) (BB)
+  nickname: Cod
   status: 1-Active
   group: 2-Grande
-  category: 2-Meat
+  category: 2a-Meat
   store: BB
-  brand: Butcher Box Wild Caught Alaskan Cod
+  fullname: Butcher Box Wild Caught Alaskan Cod
   breakfast: ""
   lunch: ""
   dinner: true
@@ -643,6 +577,7 @@
   servingsize: 140
   quantitymultiplier: 1
   unit: grams
+  prepare: 100
   servingcalories: 100
   servingfat: ""
   servingsaturated: ""
@@ -658,46 +593,13 @@
   servingalcohol: ""
   servingnetcarbs: ""
   servingprotein: 25
-- name: Fish (mackerel skinless) (WP)
-  status: 1-Active
-  group: 2-Grande
-  category: 2-Meat
-  store: WF
-  brand: Wild Planet Wild Mackerel Fillets in Extra Virgin Olive Oil (skinless and
-    boneless)
-  breakfast: ""
-  lunch: ""
-  dinner: true
-  nutrientsurl: https://products.wholefoodsmarket.com/product/wild-planet-wild-mackerel-fillets-f28d13
-  retailurl: https://www.amazon.com/Wild-Planet-Mackerel-Extra-Virgin/dp/B076VW85S5/ref=sr_1_2?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=Wild+Planet+Wild+Mackerel+Fillets+in+Extra+Virgin+Olive+Oil+%28skinless+and+boneless%29&qid=1609695999&s=wholefoods&sr=1-2
-  cost: 3.29
-  costounce: 0.75
-  costlb: 12
-  costgram: 0.026785714285714284
-  servingsize: 85.048569375
-  quantitymultiplier: 85.048569375
-  unit: can
-  servingcalories: 180
-  servingfat: 11
-  servingsaturated: 2.5
-  servingtrans: ""
-  servingpoly: ""
-  servingmono: ""
-  servingcholesterol: 30
-  servingsodium: 320
-  servingcarbohydrates: ""
-  servingfiber: ""
-  servingsugar: ""
-  servingsugarplus: ""
-  servingalcohol: ""
-  servingnetcarbs: 0
-  servingprotein: 21
 - name: Fish (salmon) (BB)
+  nickname: Salmon
   status: 1-Active
   group: 1-Small
-  category: 2-Meat
+  category: 2a-Meat
   store: BB
-  brand: Butcher Box Wild Caught Alaskan Sockeye
+  fullname: Butcher Box Wild Caught Alaskan Sockeye
   breakfast: ""
   lunch: ""
   dinner: true
@@ -710,6 +612,7 @@
   servingsize: 170
   quantitymultiplier: 1
   unit: grams
+  prepare: 100
   servingcalories: 300
   servingfat: 15
   servingsaturated: 3
@@ -726,11 +629,12 @@
   servingnetcarbs: 0
   servingprotein: 36
 - name: Fish (salmon) (WF)
+  nickname: Salmon
   status: 1-Active
   group: 2-Grande
-  category: 2-Meat
+  category: 2a-Meat
   store: WF
-  brand: Wild Caught Alaskan Sockeye
+  fullname: Wild Caught Alaskan Sockeye
   breakfast: ""
   lunch: ""
   dinner: true
@@ -743,6 +647,7 @@
   servingsize: 85.048569375
   quantitymultiplier: 1
   unit: grams
+  prepare: 100
   servingcalories: 111
   servingfat: 4
   servingsaturated: 0.69
@@ -758,111 +663,13 @@
   servingalcohol: ""
   servingnetcarbs: 0
   servingprotein: 18.912
-- name: Fish (sardines lightly smoked) (WP)
-  status: 1-Active
-  group: 2-Grande
-  category: 2-Meat
-  store: WF
-  brand: Wild Planet Wild Sardines In Extra Virgin Olive Oil Lightly Smoked
-  breakfast: ""
-  lunch: ""
-  dinner: true
-  nutrientsurl: https://wildplanetfoods.com/product/wild-sardines-in-extra-virgin-olive-oil/
-  retailurl: https://www.amazon.com/WILD-PLANET-Sardines-Olive-Oil/dp/B00XMZO3QM/ref=sr_1_4?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=Wild+Planet+Skinless+Boneless+Wild+Sardine+Fillets+In+Olive+Oil&qid=1609696645&s=wholefoods&sr=1-4
-  cost: 3.19
-  costounce: 0.73
-  costlb: 11.68
-  costgram: 0.026071428571428572
-  servingsize: 85.048569375
-  quantitymultiplier: 85.048569375
-  unit: can
-  servingcalories: 170
-  servingfat: 11
-  servingsaturated: 3
-  servingtrans: ""
-  servingpoly: ""
-  servingmono: ""
-  servingcholesterol: 35
-  servingsodium: 260
-  servingcarbohydrates: ""
-  servingfiber: ""
-  servingsugar: ""
-  servingsugarplus: ""
-  servingalcohol: ""
-  servingnetcarbs: 0
-  servingprotein: 18
-- name: Fish (sardines skinless) (WP)
-  status: 1-Active
-  group: 2-Grande
-  category: 2-Meat
-  store: WF
-  brand: Wild Planet Skinless Boneless Wild Sardine Fillets In Olive Oil
-  breakfast: ""
-  lunch: ""
-  dinner: true
-  nutrientsurl: https://products.wholefoodsmarket.com/product/wild-planet-skinless-boneless-wild-sardine-fillets-in-olive-oil-379675
-  retailurl: https://www.amazon.com/Wild-Planet-Sardines-Fillets-Virgin/dp/B07W7VCJ1V/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=Wild+Planet+Skinless+Boneless+Wild+Sardine+Fillets+In+Olive+Oil&qid=1609696900&s=wholefoods&sr=1-1
-  cost: 3.19
-  costounce: 0.75
-  costlb: 12
-  costgram: 0.026785714285714284
-  servingsize: 85.048569375
-  quantitymultiplier: 85.048569375
-  unit: can
-  servingcalories: 190
-  servingfat: 12
-  servingsaturated: 2
-  servingtrans: ""
-  servingpoly: ""
-  servingmono: ""
-  servingcholesterol: 20
-  servingsodium: 200
-  servingcarbohydrates: 0
-  servingfiber: ""
-  servingsugar: ""
-  servingsugarplus: ""
-  servingalcohol: ""
-  servingnetcarbs: 0
-  servingprotein: 21
-- name: Fish (tuna)
-  status: 1-Active
-  group: 3-Venti
-  category: 2-Meat
-  store: SW
-  brand: Chunk White Albacore Tuna in water
-  breakfast: ""
-  lunch: ""
-  dinner: true
-  nutrientsurl: https://www.safeway.com/shop/product-details.960017248.html
-  retailurl: ""
-  cost: 2.19
-  costounce: 0.13904761904761903
-  costlb: 2.2247619047619045
-  costgram: 0.0049659863945578225
-  servingsize: 56.69904625
-  quantitymultiplier: 56.69904625
-  unit: can
-  servingcalories: 45
-  servingfat: 0
-  servingsaturated: ""
-  servingtrans: ""
-  servingpoly: ""
-  servingmono: ""
-  servingcholesterol: 20
-  servingsodium: 180
-  servingcarbohydrates: 0.8
-  servingfiber: ""
-  servingsugar: ""
-  servingsugarplus: ""
-  servingalcohol: ""
-  servingnetcarbs: 0.8
-  servingprotein: 11
 - name: Pork (baby back rib) (BB)
+  nickname: Baby Back Ribs
   status: 1-Active
   group: 2-Grande
-  category: 2-Meat
+  category: 2a-Meat
   store: BB
-  brand: Butcher Box Baby Back Ribs
+  fullname: Butcher Box Baby Back Ribs
   breakfast: ""
   lunch: ""
   dinner: true
@@ -875,6 +682,7 @@
   servingsize: 113.3980925
   quantitymultiplier: 1
   unit: grams
+  prepare: 100
   servingcalories: 210
   servingfat: 13
   servingsaturated: 4
@@ -891,11 +699,12 @@
   servingnetcarbs: ""
   servingprotein: 16
 - name: Pork (bacon) (BB)
+  nickname: Bacon
   status: 1-Active
   group: 3-Venti
-  category: 2-Meat
+  category: 2a-Meat
   store: BB
-  brand: Butcher Box Bacon
+  fullname: Butcher Box Bacon
   breakfast: true
   lunch: ""
   dinner: ""
@@ -908,6 +717,7 @@
   servingsize: 11
   quantitymultiplier: 11
   unit: slices
+  prepare: 100
   servingcalories: 70
   servingfat: 7
   servingsaturated: 2.5
@@ -924,11 +734,12 @@
   servingnetcarbs: 0
   servingprotein: 2
 - name: Pork (bacon) (Pedersons)
+  nickname: Bacon
   status: 1-Active
   group: 3-Venti
-  category: 2-Meat
+  category: 2a-Meat
   store: BB
-  brand: Pederson's Original Hickory Smoked Uncured Bacon
+  fullname: Pedersons Original Hickory Smoked Uncured Bacon
   breakfast: true
   lunch: ""
   dinner: ""
@@ -941,6 +752,7 @@
   servingsize: 11
   quantitymultiplier: 11
   unit: slices
+  prepare: 100
   servingcalories: 30
   servingfat: 2
   servingsaturated: 1
@@ -957,11 +769,12 @@
   servingnetcarbs: 0
   servingprotein: 2
 - name: Pork (chop) (BB)
+  nickname: Pork Chop
   status: 1-Active
   group: 1-Small
-  category: 2-Meat
+  category: 2a-Meat
   store: BB
-  brand: Butcher Box Boneless Pork Loin Chop
+  fullname: Butcher Box Boneless Pork Loin Chop
   breakfast: ""
   lunch: ""
   dinner: true
@@ -974,6 +787,7 @@
   servingsize: 113.3980925
   quantitymultiplier: 1
   unit: grams
+  prepare: 100
   servingcalories: 220
   servingfat: 11
   servingsaturated: 4
@@ -990,11 +804,12 @@
   servingnetcarbs: 0
   servingprotein: 30
 - name: Pork (shoulder butt bone in S1) (365)
+  nickname: Shoulder Butt
   status: 1-Active
   group: 2-Grande
-  category: 2-Meat
+  category: 2a-Meat
   store: WF
-  brand: 365 Pork Shoulder Butt Roast Boneless Organic Step 1
+  fullname: 365 Pork Shoulder Butt Roast Boneless Organic Step 1
   breakfast: ""
   lunch: ""
   dinner: true
@@ -1007,6 +822,7 @@
   servingsize: 85.048569375
   quantitymultiplier: 1
   unit: grams
+  prepare: 100
   servingcalories: 229
   servingfat: 16
   servingsaturated: 6
@@ -1023,11 +839,12 @@
   servingnetcarbs: 0
   servingprotein: 19.64
 - name: Seafood (shrimp white) (365)
+  nickname: Shrimp
   status: 1-Active
   group: 3-Venti
-  category: 2-Meat
+  category: 2a-Meat
   store: WF
-  brand: 365 Peeled Deveined White Shrimp
+  fullname: 365 Peeled Deveined White Shrimp
   breakfast: ""
   lunch: ""
   dinner: true
@@ -1040,6 +857,7 @@
   servingsize: 85.048569375
   quantitymultiplier: 1
   unit: grams
+  prepare: 100
   servingcalories: 101
   servingfat: 1.4
   servingsaturated: 0.4
@@ -1055,12 +873,294 @@
   servingalcohol: ""
   servingnetcarbs: 1.3
   servingprotein: 19
-- name: Turkey (slices) (365)
+- name: Eggs (org 18) (Vital)
+  nickname: Eggs
   status: 1-Active
   group: 3-Venti
-  category: 2-Meat
+  category: 2b-Meat
   store: WF
-  brand: 365 Organic Oven-Roasted Turkey Breast
+  fullname: Vital Farms Organic Pasture-raised Eggs
+  breakfast: true
+  lunch: ""
+  dinner: ""
+  nutrientsurl: https://www.amazon.com/Vital-Farms-Large-Organic-Count/dp/B089C8JT7B/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=eggs+vital&qid=1609695941&s=wholefoods&sr=1-1
+  retailurl: https://www.amazon.com/Vital-Farms-Pasture-Organic-Raised/dp/B00M1QWODW/ref=sr_1_6?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=vital+butter&qid=1613331143&s=wholefoods&sr=1-6
+  cost: 6.99
+  costounce: 0.33027194440625074
+  costlb: 5.284351110500012
+  costgram: 0.011795426585937527
+  servingsize: 50
+  quantitymultiplier: 50
+  unit: eggs
+  prepare: 308
+  servingcalories: 70
+  servingfat: 5
+  servingsaturated: 1.5
+  servingtrans: ""
+  servingpoly: ""
+  servingmono: ""
+  servingcholesterol: 185
+  servingsodium: 70
+  servingcarbohydrates: ""
+  servingfiber: ""
+  servingsugar: ""
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: 0
+  servingprotein: 6
+- name: Eggs (org) (Vital)
+  nickname: Eggs
+  status: 1-Active
+  group: 1-Small
+  category: 2b-Meat
+  store: WF
+  fullname: Vital Farms Organic Pasture-raised Eggs
+  breakfast: true
+  lunch: ""
+  dinner: ""
+  nutrientsurl: https://www.amazon.com/Vital-Farms-Large-Organic-Count/dp/B089C8JT7B/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=eggs+vital&qid=1609695941&s=wholefoods&sr=1-1
+  retailurl: https://www.amazon.com/Vital-Farms-Pasture-Organic-Raised/dp/B00M1QWODW/ref=sr_1_6?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=vital+butter&qid=1613331143&s=wholefoods&sr=1-6
+  cost: 6.99
+  costounce: 0.33027194440625074
+  costlb: 5.284351110500012
+  costgram: 0.011795426585937527
+  servingsize: 50
+  quantitymultiplier: 50
+  unit: eggs
+  prepare: 308
+  servingcalories: 70
+  servingfat: 5
+  servingsaturated: 1.5
+  servingtrans: ""
+  servingpoly: ""
+  servingmono: ""
+  servingcholesterol: 185
+  servingsodium: 70
+  servingcarbohydrates: ""
+  servingfiber: ""
+  servingsugar: ""
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: 0
+  servingprotein: 6
+- name: Eggs (Petes)
+  nickname: Eggs
+  status: 1-Active
+  group: 3-Venti
+  category: 2b-Meat
+  store: WF
+  fullname: Pete and Gerrys Organic Large Eggs, 12 eggs
+  breakfast: true
+  lunch: ""
+  dinner: ""
+  nutrientsurl: https://products.wholefoodsmarket.com/product/pete-and-gerrys-organic-large-eggs-0cbf9c
+  retailurl: https://www.amazon.com/Pete-Gerrys-Organic-Cage-Free-Omega-3/dp/B00F0ZNK8E/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=pete%27s+eggs&qid=1613324350&s=wholefoods&sr=1-1
+  cost: 5.99
+  costounce: 0.2830227391979173
+  costlb: 4.528363827166677
+  costgram: 0.01010795497135419
+  servingsize: 50
+  quantitymultiplier: 50
+  unit: eggs
+  prepare: 308
+  servingcalories: 70
+  servingfat: 5
+  servingsaturated: 1.5
+  servingtrans: ""
+  servingpoly: ""
+  servingmono: ""
+  servingcholesterol: 185
+  servingsodium: 70
+  servingcarbohydrates: 0
+  servingfiber: ""
+  servingsugar: ""
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: 0
+  servingprotein: 6
+- name: Eggs (Vital)
+  nickname: Eggs
+  status: 1-Active
+  group: 3-Venti
+  category: 2b-Meat
+  store: WF
+  fullname: Vital Farms Pasture-raised Eggs
+  breakfast: true
+  lunch: ""
+  dinner: ""
+  nutrientsurl: https://www.amazon.com/Vital-Farms-Large-Organic-Count/dp/B089C8JT7B/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=eggs+vital&qid=1609695941&s=wholefoods&sr=1-1
+  retailurl: https://www.amazon.com/VITAL-FARMS-Large-Grade-Eggs/dp/B0849MZ45Y/ref=sr_1_10?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=vital+eggs+18&qid=1613791722&s=wholefoods&sr=1-10
+  cost: 6.99
+  costounce: 0.33027194440625074
+  costlb: 5.284351110500012
+  costgram: 0.011795426585937527
+  servingsize: 50
+  quantitymultiplier: 50
+  unit: eggs
+  prepare: 308
+  servingcalories: 70
+  servingfat: 5
+  servingsaturated: 1.5
+  servingtrans: ""
+  servingpoly: ""
+  servingmono: ""
+  servingcholesterol: 185
+  servingsodium: 70
+  servingcarbohydrates: ""
+  servingfiber: ""
+  servingsugar: ""
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: 0
+  servingprotein: 6
+- name: Fish (mackerel skinless) (WP)
+  nickname: Mackerel
+  status: 1-Active
+  group: 2-Grande
+  category: 2b-Meat
+  store: WF
+  fullname: Wild Planet Wild Mackerel Fillets in Extra Virgin Olive Oil (skinless
+    and boneless)
+  breakfast: ""
+  lunch: ""
+  dinner: true
+  nutrientsurl: https://products.wholefoodsmarket.com/product/wild-planet-wild-mackerel-fillets-f28d13
+  retailurl: https://www.amazon.com/Wild-Planet-Mackerel-Extra-Virgin/dp/B076VW85S5/ref=sr_1_2?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=Wild+Planet+Wild+Mackerel+Fillets+in+Extra+Virgin+Olive+Oil+%28skinless+and+boneless%29&qid=1609695999&s=wholefoods&sr=1-2
+  cost: 3.29
+  costounce: 0.75
+  costlb: 12
+  costgram: 0.026785714285714284
+  servingsize: 85.048569375
+  quantitymultiplier: 85.048569375
+  inc: 1
+  prepare: ""
+  servingcalories: 180
+  servingfat: 11
+  servingsaturated: 2.5
+  servingtrans: ""
+  servingpoly: ""
+  servingmono: ""
+  servingcholesterol: 30
+  servingsodium: 320
+  servingcarbohydrates: ""
+  servingfiber: ""
+  servingsugar: ""
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: 0
+  servingprotein: 21
+- name: Fish (sardines lightly smoked) (WP)
+  nickname: Sardines
+  status: 1-Active
+  group: 2-Grande
+  category: 2b-Meat
+  store: WF
+  fullname: Wild Planet Wild Sardines In Extra Virgin Olive Oil Lightly Smoked
+  breakfast: ""
+  lunch: ""
+  dinner: true
+  nutrientsurl: https://wildplanetfoods.com/product/wild-sardines-in-extra-virgin-olive-oil/
+  retailurl: https://www.amazon.com/WILD-PLANET-Sardines-Olive-Oil/dp/B00XMZO3QM/ref=sr_1_4?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=Wild+Planet+Skinless+Boneless+Wild+Sardine+Fillets+In+Olive+Oil&qid=1609696645&s=wholefoods&sr=1-4
+  cost: 3.19
+  costounce: 0.73
+  costlb: 11.68
+  costgram: 0.026071428571428572
+  servingsize: 85.048569375
+  quantitymultiplier: 85.048569375
+  inc: 1
+  prepare: ""
+  servingcalories: 170
+  servingfat: 11
+  servingsaturated: 3
+  servingtrans: ""
+  servingpoly: ""
+  servingmono: ""
+  servingcholesterol: 35
+  servingsodium: 260
+  servingcarbohydrates: ""
+  servingfiber: ""
+  servingsugar: ""
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: 0
+  servingprotein: 18
+- name: Fish (sardines skinless) (WP)
+  nickname: Sardines
+  status: 1-Active
+  group: 2-Grande
+  category: 2b-Meat
+  store: WF
+  fullname: Wild Planet Skinless Boneless Wild Sardine Fillets In Olive Oil
+  breakfast: ""
+  lunch: ""
+  dinner: true
+  nutrientsurl: https://products.wholefoodsmarket.com/product/wild-planet-skinless-boneless-wild-sardine-fillets-in-olive-oil-379675
+  retailurl: https://www.amazon.com/Wild-Planet-Sardines-Fillets-Virgin/dp/B07W7VCJ1V/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=Wild+Planet+Skinless+Boneless+Wild+Sardine+Fillets+In+Olive+Oil&qid=1609696900&s=wholefoods&sr=1-1
+  cost: 3.19
+  costounce: 0.75
+  costlb: 12
+  costgram: 0.026785714285714284
+  servingsize: 85.048569375
+  quantitymultiplier: 85.048569375
+  inc: 1
+  prepare: ""
+  servingcalories: 190
+  servingfat: 12
+  servingsaturated: 2
+  servingtrans: ""
+  servingpoly: ""
+  servingmono: ""
+  servingcholesterol: 20
+  servingsodium: 200
+  servingcarbohydrates: 0
+  servingfiber: ""
+  servingsugar: ""
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: 0
+  servingprotein: 21
+- name: Fish (tuna)
+  nickname: Tuna
+  status: 1-Active
+  group: 2-Grande
+  category: 2b-Meat
+  store: SW
+  fullname: Chunk White Albacore Tuna in water
+  breakfast: ""
+  lunch: ""
+  dinner: true
+  nutrientsurl: https://www.safeway.com/shop/product-details.960017248.html
+  retailurl: ""
+  cost: 2.19
+  costounce: 0.13904761904761903
+  costlb: 2.2247619047619045
+  costgram: 0.0049659863945578225
+  servingsize: 56.69904625
+  quantitymultiplier: 255.145708125
+  inc: 1
+  prepare: ""
+  servingcalories: 45
+  servingfat: 0
+  servingsaturated: ""
+  servingtrans: ""
+  servingpoly: ""
+  servingmono: ""
+  servingcholesterol: 20
+  servingsodium: 180
+  servingcarbohydrates: 0.8
+  servingfiber: ""
+  servingsugar: ""
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: 0.8
+  servingprotein: 11
+- name: Turkey (slices) (365)
+  nickname: Turkey Slice
+  status: 1-Active
+  group: 3-Venti
+  category: 2b-Meat
+  store: WF
+  fullname: 365 Organic Oven-Roasted Turkey Breast
   breakfast: ""
   lunch: true
   dinner: ""
@@ -1072,7 +1172,8 @@
   costgram: 0.03464285714285714
   servingsize: 56.69904625
   quantitymultiplier: 6.299894027777778
-  unit: slices
+  inc: 3
+  prepare: ""
   servingcalories: 70
   servingfat: 2
   servingsaturated: ""
@@ -1089,11 +1190,12 @@
   servingnetcarbs: 0.8
   servingprotein: 12
 - name: Arugula (365)
+  nickname: Arugula
   status: 1-Active
   group: 1-Small
   category: 3a-Veg
   store: WF
-  brand: 365 Organic Packaged Baby Arugula
+  fullname: 365 Organic Packaged Baby Arugula
   breakfast: true
   lunch: ""
   dinner: true
@@ -1105,7 +1207,8 @@
   costgram: 0.014285714285714287
   servingsize: 85.048569375
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: 401
   servingcalories: 30
   servingfat: 0
   servingsaturated: ""
@@ -1122,11 +1225,12 @@
   servingnetcarbs: 1
   servingprotein: 4
 - name: Cabbage (red) (365)
+  nickname: Cabbage
   status: 1-Active
   group: 2-Grande
   category: 3a-Veg
   store: WF
-  brand: 365 Organic Red Cabbage
+  fullname: 365 Organic Red Cabbage
   breakfast: ""
   lunch: ""
   dinner: true
@@ -1138,7 +1242,8 @@
   costgram: 0.003325892857142857
   servingsize: 89
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: 402
   servingcalories: 28
   servingfat: 0.14
   servingsaturated: 0.02
@@ -1154,12 +1259,48 @@
   servingalcohol: ""
   servingnetcarbs: 5.1
   servingprotein: 1.3
-- name: Kale (365)
+- name: Collard Green (365)
+  nickname: Collard Greens
   status: 1-Active
   group: 2-Grande
   category: 3a-Veg
   store: WF
-  brand: 365 Chopped Kale
+  fullname: 365 Organic Collard Green
+  breakfast: ""
+  lunch: ""
+  dinner: true
+  nutrientsurl: https://products.wholefoodsmarket.com/product/organic-collard-greens-e808f0
+  retailurl: https://www.amazon.com/Greens-Collard-Organic-1-Each/dp/B0785VRYVH/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&crid=13PHZWBUN9IKV&dchild=1&fpw=alm&keywords=collard+greens&qid=1610152077&s=wholefoods&sprefix=collard%2Cwholefoods%2C219&sr=1-1
+  cost: 1.99
+  costounce: ""
+  costlb: ""
+  costgram: 0
+  servingsize: 36
+  quantitymultiplier: 1
+  inc: 0
+  prepare: 402
+  servingcalories: 12
+  servingfat: 0.22
+  servingsaturated: 0.02
+  servingtrans: ""
+  servingpoly: 0.072
+  servingmono: 0.011
+  servingcholesterol: ""
+  servingsodium: 6
+  servingcarbohydrates: 2
+  servingfiber: 1.4
+  servingsugar: 0.17
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: 0.6000000000000001
+  servingprotein: 1.09
+- name: Kale (365)
+  nickname: Kale
+  status: 1-Active
+  group: 2-Grande
+  category: 3a-Veg
+  store: WF
+  fullname: 365 Chopped Kale
   breakfast: ""
   lunch: true
   dinner: true
@@ -1171,7 +1312,8 @@
   costgram: 0.007790178571428572
   servingsize: 16
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: 400
   servingcalories: 8
   servingfat: 0.15
   servingsaturated: 0.02
@@ -1188,11 +1330,12 @@
   servingnetcarbs: 0.82
   servingprotein: 0.685
 - name: Kale (org) (365)
+  nickname: Kale
   status: 1-Active
   group: 1-Small
   category: 3a-Veg
   store: WF
-  brand: 365 Organic Chopped Kale
+  fullname: 365 Organic Chopped Kale
   breakfast: ""
   lunch: true
   dinner: true
@@ -1204,7 +1347,8 @@
   costgram: 0.011875
   servingsize: 16
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: 400
   servingcalories: 8
   servingfat: 0.15
   servingsaturated: 0.02
@@ -1221,11 +1365,12 @@
   servingnetcarbs: 0.82
   servingprotein: 0.685
 - name: Romaine Lettuce (365)
+  nickname: Romaine
   status: 1-Active
   group: 2-Grande
   category: 3a-Veg
   store: WF
-  brand: 365 Romaine Hearts Salad Bag Organic
+  fullname: 365 Romaine Hearts Salad Bag Organic
   breakfast: ""
   lunch: true
   dinner: ""
@@ -1237,7 +1382,8 @@
   costgram: 0.010379464285714287
   servingsize: 47
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: 105
   servingcalories: 8
   servingfat: 0.14
   servingsaturated: 0.02
@@ -1254,11 +1400,12 @@
   servingnetcarbs: 0.51
   servingprotein: 0.578
 - name: Asparagus (365)
+  nickname: Asparagus
   status: 1-Active
   group: 1-Small
   category: 3b-Veg
   store: WF
-  brand: 365 Organic Green Asparagus
+  fullname: 365 Organic Green Asparagus
   breakfast: ""
   lunch: ""
   dinner: true
@@ -1270,7 +1417,8 @@
   costgram: 0.013370535714285715
   servingsize: 67
   quantitymultiplier: 1
-  unit: grams
+  inc: 5
+  prepare: 102
   servingcalories: 13
   servingfat: 0.08
   servingsaturated: 0.03
@@ -1287,11 +1435,12 @@
   servingnetcarbs: 1.2000000000000002
   servingprotein: 1.5
 - name: Broccoli (365)
+  nickname: Broccoli
   status: 1-Active
   group: 1-Small
   category: 3b-Veg
   store: WF
-  brand: 365 Organic Broccoli
+  fullname: 365 Organic Broccoli
   breakfast: ""
   lunch: ""
   dinner: true
@@ -1303,7 +1452,8 @@
   costgram: 0.006674107142857143
   servingsize: 45.5
   quantitymultiplier: 1
-  unit: grams
+  inc: 5
+  prepare: 102
   servingcalories: 15
   servingfat: 0.17
   servingsaturated: 0.02
@@ -1320,11 +1470,12 @@
   servingnetcarbs: 1.8
   servingprotein: 1.3
 - name: Brussels Sprouts (365)
+  nickname: Brussels Sprouts
   status: 1-Active
   group: 1-Small
   category: 3b-Veg
   store: WF
-  brand: 365 Organic Brussells Sprouts
+  fullname: 365 Organic Brussells Sprouts
   breakfast: ""
   lunch: ""
   dinner: true
@@ -1336,7 +1487,8 @@
   costgram: 0.008906250000000001
   servingsize: 88
   quantitymultiplier: 1
-  unit: grams
+  inc: 5
+  prepare: 102
   servingcalories: 38
   servingfat: 0.26
   servingsaturated: 0.06
@@ -1352,45 +1504,13 @@
   servingalcohol: ""
   servingnetcarbs: 4.7
   servingprotein: 2.974
-- name: Carrots (365)
-  status: 1-Active
-  group: 1-Small
-  category: 3b-Veg
-  store: WF
-  brand: 365 Organic Baby Carrots
-  breakfast: ""
-  lunch: ""
-  dinner: true
-  nutrientsurl: https://products.wholefoodsmarket.com/product/365-everyday-value-organic-carrots-e630fb
-  retailurl: https://www.amazon.com/gp/product/B0787W8T3R/ref=ox_sc_act_title_2?smid=A32XPZGSYAR2CW&almBrandId=VUZHIFdob2xlIEZvb2Rz&psc=1&fpw=alm
-  cost: ""
-  costounce: ""
-  costlb: 0.99
-  costgram: 0.0022098214285714286
-  servingsize: 61
-  quantitymultiplier: 1
-  unit: grams
-  servingcalories: 52
-  servingfat: 0.31
-  servingsaturated: 0.05
-  servingtrans: ""
-  servingpoly: 0.15
-  servingmono: 0.018
-  servingcholesterol: ""
-  servingsodium: 88
-  servingcarbohydrates: 12
-  servingfiber: 3.6
-  servingsugar: 6.067
-  servingsugarplus: ""
-  servingalcohol: ""
-  servingnetcarbs: 8.4
-  servingprotein: 1.2
 - name: Cauliflower (365)
+  nickname: Cauliflower
   status: 1-Active
   group: 2-Grande
   category: 3b-Veg
   store: WF
-  brand: 365 Organic Cauliflower
+  fullname: 365 Organic Cauliflower
   breakfast: ""
   lunch: ""
   dinner: true
@@ -1402,7 +1522,8 @@
   costgram: 0.006339285714285714
   servingsize: 85.048569375
   quantitymultiplier: 1
-  unit: grams
+  inc: 5
+  prepare: 102
   servingcalories: 13
   servingfat: 0.15
   servingsaturated: 0.07
@@ -1418,78 +1539,13 @@
   servingalcohol: ""
   servingnetcarbs: 1.6
   servingprotein: 1
-- name: Cilantro (365)
-  status: 1-Active
-  group: 3-Venti
-  category: 3b-Veg
-  store: WF
-  brand: 365 Organic Cilantro
-  breakfast: true
-  lunch: ""
-  dinner: true
-  nutrientsurl: https://products.wholefoodsmarket.com/product/organic-cilantro-e6dca6
-  retailurl: ""
-  cost: ""
-  costounce: ""
-  costlb: 1.49
-  costgram: 0.003325892857142857
-  servingsize: 4
-  quantitymultiplier: 1
-  unit: grams
-  servingcalories: 0.92
-  servingfat: 0.02
-  servingsaturated: ""
-  servingtrans: ""
-  servingpoly: ""
-  servingmono: 0.01
-  servingcholesterol: ""
-  servingsodium: 1.8
-  servingcarbohydrates: 0.15
-  servingfiber: 0.11
-  servingsugar: 0.03
-  servingsugarplus: ""
-  servingalcohol: ""
-  servingnetcarbs: 0.039999999999999994
-  servingprotein: 0.09
-- name: Cucumber (365)
-  status: 1-Active
-  group: 3-Venti
-  category: 3b-Veg
-  store: WF
-  brand: 365 Cucumber Baby Organic
-  breakfast: ""
-  lunch: ""
-  dinner: true
-  nutrientsurl: https://products.wholefoodsmarket.com/product/organic-baby-persian-cucumbers-9f2996
-  retailurl: https://www.amazon.com/PRODUCE-Organic-Persian-Cucumber-Ounce/dp/B07FTYWCCD/ref=sr_1_4?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=cucumber&qid=1610386993&s=wholefoods&sr=1-4
-  cost: 3.99
-  costounce: 0.25
-  costlb: 4
-  costgram: 0.008928571428571428
-  servingsize: 53
-  quantitymultiplier: 1
-  unit: grams
-  servingcalories: 8
-  servingfat: 0.06
-  servingsaturated: 0.02
-  servingtrans: ""
-  servingpoly: 0.02
-  servingmono: ""
-  servingcholesterol: ""
-  servingsodium: 1
-  servingcarbohydrates: 1.9
-  servingfiber: 0.26
-  servingsugar: 0.868
-  servingsugarplus: ""
-  servingalcohol: ""
-  servingnetcarbs: 1.64
-  servingprotein: 0.338
 - name: Green Beans (365)
+  nickname: Green Beans
   status: 1-Active
   group: 1-Small
   category: 3b-Veg
   store: WF
-  brand: 365 Organic Green Beans - Trimmed
+  fullname: 365 Organic Green Beans - Trimmed
   breakfast: ""
   lunch: ""
   dinner: true
@@ -1501,7 +1557,8 @@
   costgram: 0.011875
   servingsize: 150
   quantitymultiplier: 1
-  unit: grams
+  inc: 5
+  prepare: 102
   servingcalories: 17
   servingfat: 0.12
   servingsaturated: 0.03
@@ -1517,12 +1574,83 @@
   servingalcohol: ""
   servingnetcarbs: 2.3
   servingprotein: 1.007
-- name: Mushrooms (baby bella) (365)
+- name: Zucchini (365)
+  nickname: Zucchini
   status: 1-Active
-  group: 3-Venti
+  group: 2-Grande
   category: 3b-Veg
   store: WF
-  brand: Organic Whole Baby Bella Mushrooms
+  fullname: 365 Organic Zucchini Squash
+  breakfast: ""
+  lunch: ""
+  dinner: true
+  nutrientsurl: https://products.wholefoodsmarket.com/product/organic-zucchini-squash-f88075
+  retailurl: https://www.amazon.com/Squash-Zucchini-Organic-1-Each/dp/B0787THH7J/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=365+Organic+Zucchini+Squash&qid=1610387111&s=wholefoods&sr=1-1
+  cost: ""
+  costounce: ""
+  costlb: 2.79
+  costgram: 0.0062276785714285715
+  servingsize: 56.69904625
+  quantitymultiplier: 1
+  inc: 5
+  prepare: 102
+  servingcalories: 10
+  servingfat: 0.18
+  servingsaturated: 0.05
+  servingtrans: ""
+  servingpoly: 0.051
+  servingmono: 0.006
+  servingcholesterol: ""
+  servingsodium: 4.5
+  servingcarbohydrates: 1.8
+  servingfiber: 0.57
+  servingsugar: 1.412
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: 1.23
+  servingprotein: 0.68
+- name: Carrots (365)
+  nickname: Carrots
+  status: 1-Active
+  group: 1-Small
+  category: 3c-Veg
+  store: WF
+  fullname: 365 Organic Baby Carrots
+  breakfast: ""
+  lunch: ""
+  dinner: true
+  nutrientsurl: https://products.wholefoodsmarket.com/product/365-everyday-value-organic-carrots-e630fb
+  retailurl: https://www.amazon.com/gp/product/B0787W8T3R/ref=ox_sc_act_title_2?smid=A32XPZGSYAR2CW&almBrandId=VUZHIFdob2xlIEZvb2Rz&psc=1&fpw=alm
+  cost: ""
+  costounce: ""
+  costlb: 0.99
+  costgram: 0.0022098214285714286
+  servingsize: 61
+  quantitymultiplier: 1
+  inc: 0
+  prepare: 410
+  servingcalories: 52
+  servingfat: 0.31
+  servingsaturated: 0.05
+  servingtrans: ""
+  servingpoly: 0.15
+  servingmono: 0.018
+  servingcholesterol: ""
+  servingsodium: 88
+  servingcarbohydrates: 12
+  servingfiber: 3.6
+  servingsugar: 6.067
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: 8.4
+  servingprotein: 1.2
+- name: Mushrooms (baby bella) (365)
+  nickname: Mushrooms
+  status: 1-Active
+  group: 3-Venti
+  category: 3c-Veg
+  store: WF
+  fullname: Organic Whole Baby Bella Mushrooms
   breakfast: ""
   lunch: ""
   dinner: true
@@ -1534,7 +1662,8 @@
   costgram: 0.015580357142857144
   servingsize: 87
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: 412
   servingcalories: 19
   servingfat: 0.09
   servingsaturated: 0.01
@@ -1551,11 +1680,12 @@
   servingnetcarbs: 3.18
   servingprotein: 2.175
 - name: Mushrooms (white) (365)
+  nickname: Mushrooms
   status: 1-Active
   group: 1-Small
-  category: 3b-Veg
+  category: 3c-Veg
   store: WF
-  brand: Organic Whole White Mushrooms
+  fullname: Organic Whole White Mushrooms
   breakfast: ""
   lunch: ""
   dinner: true
@@ -1567,7 +1697,8 @@
   costgram: 0.013370535714285715
   servingsize: 35
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: 412
   servingcalories: 8
   servingfat: 0.12
   servingsaturated: 0.02
@@ -1583,78 +1714,13 @@
   servingalcohol: ""
   servingnetcarbs: 0.7500000000000001
   servingprotein: 2.966
-- name: Okra (365)
-  status: 1-Active
-  group: 3-Venti
-  category: 3b-Veg
-  store: WF
-  brand: 365 Green Okra
-  breakfast: ""
-  lunch: ""
-  dinner: true
-  nutrientsurl: https://products.wholefoodsmarket.com/product/okra-e2170e
-  retailurl: https://www.amazon.com/Okra-Regular-Green-Conventional-0-5lb/dp/B07814J4VQ/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=okra&qid=1610387087&s=wholefoods&sr=1-1
-  cost: ""
-  costounce: ""
-  costlb: 4.99
-  costgram: 0.011138392857142857
-  servingsize: 50
-  quantitymultiplier: 1
-  unit: grams
-  servingcalories: 17
-  servingfat: 0.1
-  servingsaturated: ""
-  servingtrans: ""
-  servingpoly: 0.013
-  servingmono: 0.009
-  servingcholesterol: ""
-  servingsodium: 3.5
-  servingcarbohydrates: 3.7
-  servingfiber: 1.6
-  servingsugar: 0.74
-  servingsugarplus: ""
-  servingalcohol: ""
-  servingnetcarbs: 2.1
-  servingprotein: 0.97
-- name: Parsley (365)
-  status: 1-Active
-  group: 3-Venti
-  category: 3b-Veg
-  store: WF
-  brand: 365 Organic Italian Parsley
-  breakfast: true
-  lunch: ""
-  dinner: true
-  nutrientsurl: https://products.wholefoodsmarket.com/product/organic-italian-parsley-ecddbe
-  retailurl: https://www.amazon.com/Herb-Italian-Parsley-Organic-Bunch/dp/B0781B3YD8/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=parsley&qid=1613792989&s=wholefoods&sr=1-1
-  cost: 1.49
-  costounce: ""
-  costlb: ""
-  costgram: 0
-  servingsize: 3.8
-  quantitymultiplier: 1
-  unit: grams
-  servingcalories: 1.4
-  servingfat: 0.03
-  servingsaturated: 0.01
-  servingtrans: ""
-  servingpoly: ""
-  servingmono: 0.01
-  servingcholesterol: ""
-  servingsodium: 2.1
-  servingcarbohydrates: 0.24
-  servingfiber: 0.13
-  servingsugar: 0.03
-  servingsugarplus: ""
-  servingalcohol: ""
-  servingnetcarbs: 0.10999999999999999
-  servingprotein: 0.11
 - name: Radish (365)
+  nickname: Radish
   status: 1-Active
   group: 1-Small
-  category: 3b-Veg
+  category: 3c-Veg
   store: WF
-  brand: 365 Organic Red Radish Bunch
+  fullname: 365 Organic Red Radish Bunch
   breakfast: ""
   lunch: ""
   dinner: true
@@ -1666,7 +1732,8 @@
   costgram: 0.011696428571428571
   servingsize: 58
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: 410
   servingcalories: 9
   servingfat: 0.06
   servingsaturated: 0.02
@@ -1683,11 +1750,12 @@
   servingnetcarbs: 1.0699999999999998
   servingprotein: 0.39
 - name: Salsa (Casa Chicas)
+  nickname: Salsa
   status: 1-Active
   group: 1-Small
-  category: 3b-Veg
+  category: 3c-Veg
   store: WF
-  brand: Casa Chicas Spicy Salsa
+  fullname: Casa Chicas Spicy Salsa
   breakfast: true
   lunch: ""
   dinner: ""
@@ -1699,7 +1767,8 @@
   costgram: 0.013214285714285715
   servingsize: 30
   quantitymultiplier: 15
-  unit: tbsp
+  inc: 0
+  prepare: 309
   servingcalories: 10
   servingfat: ""
   servingsaturated: ""
@@ -1716,11 +1785,12 @@
   servingnetcarbs: 0
   servingprotein: ""
 - name: Serrano Pepper (365)
+  nickname: Serrano
   status: 1-Active
   group: 1-Small
-  category: 3b-Veg
+  category: 3c-Veg
   store: WF
-  brand: 365 Organic Serrano Pepper
+  fullname: 365 Organic Serrano Pepper
   breakfast: true
   lunch: ""
   dinner: ""
@@ -1732,7 +1802,8 @@
   costgram: 0.011138392857142857
   servingsize: 14
   quantitymultiplier: 14.5
-  unit: peppers
+  inc: 0
+  prepare: 302
   servingcalories: 2
   servingfat: 0.03
   servingsaturated: ""
@@ -1748,78 +1819,13 @@
   servingalcohol: ""
   servingnetcarbs: 0.17999999999999997
   servingprotein: 0.11
-- name: Tomato (365)
-  status: 1-Active
-  group: 3-Venti
-  category: 3b-Veg
-  store: WF
-  brand: 365 Organic Tomato on the Vine
-  breakfast: true
-  lunch: ""
-  dinner: true
-  nutrientsurl: https://products.wholefoodsmarket.com/product/organic-tomatoes-on-the-vine-f63de5
-  retailurl: https://www.amazon.com/Tomato-Vine-Organic-1-Each/dp/B0787YC695/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=365+Organic+Tomato+on+the+Vine&qid=1609697471&s=wholefoods&sr=1-1
-  cost: ""
-  costounce: ""
-  costlb: 2.99
-  costgram: 0.006674107142857143
-  servingsize: 123
-  quantitymultiplier: 123
-  unit: tomatoes
-  servingcalories: 22
-  servingfat: 0.25
-  servingsaturated: 0.03
-  servingtrans: ""
-  servingpoly: 0.1
-  servingmono: 0.04
-  servingcholesterol: ""
-  servingsodium: 6
-  servingcarbohydrates: 4.8
-  servingfiber: 1.5
-  servingsugar: 3.23
-  servingsugarplus: ""
-  servingalcohol: ""
-  servingnetcarbs: 3.3
-  servingprotein: 1.08
-- name: Zucchini (365)
-  status: 1-Active
-  group: 2-Grande
-  category: 3b-Veg
-  store: WF
-  brand: 365 Organic Zucchini Squash
-  breakfast: ""
-  lunch: ""
-  dinner: true
-  nutrientsurl: https://products.wholefoodsmarket.com/product/organic-zucchini-squash-f88075
-  retailurl: https://www.amazon.com/Squash-Zucchini-Organic-1-Each/dp/B0787THH7J/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=365+Organic+Zucchini+Squash&qid=1610387111&s=wholefoods&sr=1-1
-  cost: ""
-  costounce: ""
-  costlb: 2.79
-  costgram: 0.0062276785714285715
-  servingsize: 56.69904625
-  quantitymultiplier: 1
-  unit: grams
-  servingcalories: 10
-  servingfat: 0.18
-  servingsaturated: 0.05
-  servingtrans: ""
-  servingpoly: 0.051
-  servingmono: 0.006
-  servingcholesterol: ""
-  servingsodium: 4.5
-  servingcarbohydrates: 1.8
-  servingfiber: 0.57
-  servingsugar: 1.412
-  servingsugarplus: ""
-  servingalcohol: ""
-  servingnetcarbs: 1.23
-  servingprotein: 0.68
 - name: Beet (365)
+  nickname: Beet
   status: 1-Active
   group: 3-Venti
-  category: 3c-Veg
+  category: 3d-Veg
   store: WF
-  brand: 365 Organic Loose Red Beets
+  fullname: 365 Organic Loose Red Beets
   breakfast: ""
   lunch: ""
   dinner: ""
@@ -1831,7 +1837,8 @@
   costgram: 0.004441964285714286
   servingsize: 100
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: ""
   servingcalories: 35
   servingfat: 0.14
   servingsaturated: 0.02
@@ -1848,11 +1855,12 @@
   servingnetcarbs: 5.7
   servingprotein: 1.32
 - name: Butternut Squash (365)
+  nickname: Squash
   status: 1-Active
   group: 3-Venti
-  category: 3c-Veg
+  category: 3d-Veg
   store: WF
-  brand: 365 Organic Butternut Squash
+  fullname: 365 Organic Butternut Squash
   breakfast: ""
   lunch: ""
   dinner: ""
@@ -1864,7 +1872,8 @@
   costgram: 0.003325892857142857
   servingsize: 140
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: ""
   servingcalories: 63
   servingfat: 0.14
   servingsaturated: 0.03
@@ -1880,12 +1889,83 @@
   servingalcohol: ""
   servingnetcarbs: 13.2
   servingprotein: 1.4
-- name: Green Bell Pepper (365)
+- name: Cilantro (365)
+  nickname: Cilantro
   status: 1-Active
   group: 3-Venti
-  category: 3c-Veg
+  category: 3d-Veg
   store: WF
-  brand: 365 Organic Green Bell Pepper
+  fullname: 365 Organic Cilantro
+  breakfast: true
+  lunch: ""
+  dinner: true
+  nutrientsurl: https://products.wholefoodsmarket.com/product/organic-cilantro-e6dca6
+  retailurl: ""
+  cost: ""
+  costounce: ""
+  costlb: 1.49
+  costgram: 0.003325892857142857
+  servingsize: 4
+  quantitymultiplier: 1
+  inc: 0
+  prepare: ""
+  servingcalories: 0.92
+  servingfat: 0.02
+  servingsaturated: ""
+  servingtrans: ""
+  servingpoly: ""
+  servingmono: 0.01
+  servingcholesterol: ""
+  servingsodium: 1.8
+  servingcarbohydrates: 0.15
+  servingfiber: 0.11
+  servingsugar: 0.03
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: 0.039999999999999994
+  servingprotein: 0.09
+- name: Cucumber (365)
+  nickname: Cucumber
+  status: 1-Active
+  group: 3-Venti
+  category: 3d-Veg
+  store: WF
+  fullname: 365 Cucumber Baby Organic
+  breakfast: ""
+  lunch: ""
+  dinner: true
+  nutrientsurl: https://products.wholefoodsmarket.com/product/organic-baby-persian-cucumbers-9f2996
+  retailurl: https://www.amazon.com/PRODUCE-Organic-Persian-Cucumber-Ounce/dp/B07FTYWCCD/ref=sr_1_4?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=cucumber&qid=1610386993&s=wholefoods&sr=1-4
+  cost: 3.99
+  costounce: 0.25
+  costlb: 4
+  costgram: 0.008928571428571428
+  servingsize: 53
+  quantitymultiplier: 1
+  inc: 0
+  prepare: ""
+  servingcalories: 8
+  servingfat: 0.06
+  servingsaturated: 0.02
+  servingtrans: ""
+  servingpoly: 0.02
+  servingmono: ""
+  servingcholesterol: ""
+  servingsodium: 1
+  servingcarbohydrates: 1.9
+  servingfiber: 0.26
+  servingsugar: 0.868
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: 1.64
+  servingprotein: 0.338
+- name: Green Bell Pepper (365)
+  nickname: Green Bell Pepper
+  status: 1-Active
+  group: 3-Venti
+  category: 3d-Veg
+  store: WF
+  fullname: 365 Organic Green Bell Pepper
   breakfast: true
   lunch: ""
   dinner: ""
@@ -1897,7 +1977,8 @@
   costgram: 0.006674107142857143
   servingsize: 46
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: 302
   servingcalories: 9
   servingfat: 0.08
   servingsaturated: 0.03
@@ -1913,12 +1994,48 @@
   servingalcohol: ""
   servingnetcarbs: 1.32
   servingprotein: 0.4
-- name: Onion (red) (365)
+- name: Okra (365)
+  nickname: Okra
   status: 1-Active
   group: 3-Venti
-  category: 3c-Veg
+  category: 3d-Veg
   store: WF
-  brand: 365 Organic Red Onion
+  fullname: 365 Green Okra
+  breakfast: ""
+  lunch: ""
+  dinner: true
+  nutrientsurl: https://products.wholefoodsmarket.com/product/okra-e2170e
+  retailurl: https://www.amazon.com/Okra-Regular-Green-Conventional-0-5lb/dp/B07814J4VQ/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=okra&qid=1610387087&s=wholefoods&sr=1-1
+  cost: ""
+  costounce: ""
+  costlb: 4.99
+  costgram: 0.011138392857142857
+  servingsize: 50
+  quantitymultiplier: 1
+  inc: 0
+  prepare: ""
+  servingcalories: 17
+  servingfat: 0.1
+  servingsaturated: ""
+  servingtrans: ""
+  servingpoly: 0.013
+  servingmono: 0.009
+  servingcholesterol: ""
+  servingsodium: 3.5
+  servingcarbohydrates: 3.7
+  servingfiber: 1.6
+  servingsugar: 0.74
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: 2.1
+  servingprotein: 0.97
+- name: Onion (red) (365)
+  nickname: Onion
+  status: 1-Active
+  group: 3-Venti
+  category: 3d-Veg
+  store: WF
+  fullname: 365 Organic Red Onion
   breakfast: true
   lunch: ""
   dinner: ""
@@ -1930,7 +2047,8 @@
   costgram: 0.0037723214285714283
   servingsize: 80
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: 302
   servingcalories: 32
   servingfat: 0.08
   servingsaturated: 0.03
@@ -1947,11 +2065,12 @@
   servingnetcarbs: 5.6
   servingprotein: 0.88
 - name: Onion (yellow) (365)
+  nickname: Onion
   status: 1-Active
   group: 1-Small
-  category: 3c-Veg
+  category: 3d-Veg
   store: WF
-  brand: 365 Organic Yellow Onion
+  fullname: 365 Organic Yellow Onion
   breakfast: true
   lunch: ""
   dinner: ""
@@ -1963,7 +2082,8 @@
   costgram: 0.0037723214285714283
   servingsize: 80
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: 302
   servingcalories: 32
   servingfat: 0.08
   servingsaturated: 0.03
@@ -1980,11 +2100,12 @@
   servingnetcarbs: 5.6
   servingprotein: 0.88
 - name: Orange Bell Pepper (365)
+  nickname: Orange Bell Pepper
   status: 1-Active
   group: 3-Venti
-  category: 3c-Veg
+  category: 3d-Veg
   store: WF
-  brand: 365 Whole Trade Organic Orange Bell Pepper
+  fullname: 365 Whole Trade Organic Orange Bell Pepper
   breakfast: true
   lunch: ""
   dinner: ""
@@ -1996,7 +2117,8 @@
   costgram: 0.011138392857142857
   servingsize: 46
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: 302
   servingcalories: 14
   servingfat: 0.14
   servingsaturated: 0.01
@@ -2012,12 +2134,48 @@
   servingalcohol: ""
   servingnetcarbs: 1.8299999999999998
   servingprotein: 0.455
-- name: Peas (365)
+- name: Parsley (365)
+  nickname: Parsley
   status: 1-Active
   group: 3-Venti
-  category: 3c-Veg
+  category: 3d-Veg
   store: WF
-  brand: 365 Frozen Organic Vegetables, Green Peas - No Salt Added
+  fullname: 365 Organic Italian Parsley
+  breakfast: true
+  lunch: ""
+  dinner: true
+  nutrientsurl: https://products.wholefoodsmarket.com/product/organic-italian-parsley-ecddbe
+  retailurl: https://www.amazon.com/Herb-Italian-Parsley-Organic-Bunch/dp/B0781B3YD8/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=parsley&qid=1613792989&s=wholefoods&sr=1-1
+  cost: 1.49
+  costounce: ""
+  costlb: ""
+  costgram: 0
+  servingsize: 3.8
+  quantitymultiplier: 1
+  inc: 0
+  prepare: ""
+  servingcalories: 1.4
+  servingfat: 0.03
+  servingsaturated: 0.01
+  servingtrans: ""
+  servingpoly: ""
+  servingmono: 0.01
+  servingcholesterol: ""
+  servingsodium: 2.1
+  servingcarbohydrates: 0.24
+  servingfiber: 0.13
+  servingsugar: 0.03
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: 0.10999999999999999
+  servingprotein: 0.11
+- name: Peas (365)
+  nickname: Peas
+  status: 1-Active
+  group: 3-Venti
+  category: 3d-Veg
+  store: WF
+  fullname: 365 Frozen Organic Vegetables, Green Peas - No Salt Added
   breakfast: ""
   lunch: ""
   dinner: true
@@ -2029,7 +2187,8 @@
   costgram: 0.005714285714285714
   servingsize: 85
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: ""
   servingcalories: 70
   servingfat: ""
   servingsaturated: ""
@@ -2046,11 +2205,12 @@
   servingnetcarbs: 8
   servingprotein: 4
 - name: Red Bell Pepper (365)
+  nickname: Red Bell Pepper
   status: 1-Active
   group: 3-Venti
-  category: 3c-Veg
+  category: 3d-Veg
   store: WF
-  brand: 365 Whole Trade Organic Red Bell Pepper
+  fullname: 365 Whole Trade Organic Red Bell Pepper
   breakfast: true
   lunch: ""
   dinner: ""
@@ -2062,7 +2222,8 @@
   costgram: 0.011138392857142857
   servingsize: 46
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: 302
   servingcalories: 14
   servingfat: 0.14
   servingsaturated: 0.01
@@ -2079,11 +2240,12 @@
   servingnetcarbs: 1.8299999999999998
   servingprotein: 0.46
 - name: Sweet Potato (365)
+  nickname: Sweet Potato
   status: 1-Active
   group: 3-Venti
-  category: 3c-Veg
+  category: 3d-Veg
   store: WF
-  brand: 365 Organic Jewel Sweet Potato
+  fullname: 365 Organic Jewel Sweet Potato
   breakfast: ""
   lunch: ""
   dinner: ""
@@ -2095,7 +2257,8 @@
   costgram: 0.004441964285714286
   servingsize: 130
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: ""
   servingcalories: 112
   servingfat: 0.07
   servingsaturated: 0.02
@@ -2111,12 +2274,48 @@
   servingalcohol: ""
   servingnetcarbs: 22.1
   servingprotein: 2.04
+- name: Tomato (365)
+  nickname: Tomato
+  status: 1-Active
+  group: 3-Venti
+  category: 3d-Veg
+  store: WF
+  fullname: 365 Organic Tomato on the Vine
+  breakfast: true
+  lunch: ""
+  dinner: true
+  nutrientsurl: https://products.wholefoodsmarket.com/product/organic-tomatoes-on-the-vine-f63de5
+  retailurl: https://www.amazon.com/Tomato-Vine-Organic-1-Each/dp/B0787YC695/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&dchild=1&fpw=alm&keywords=365+Organic+Tomato+on+the+Vine&qid=1609697471&s=wholefoods&sr=1-1
+  cost: ""
+  costounce: ""
+  costlb: 2.99
+  costgram: 0.006674107142857143
+  servingsize: 123
+  quantitymultiplier: 123
+  inc: 0
+  prepare: ""
+  servingcalories: 22
+  servingfat: 0.25
+  servingsaturated: 0.03
+  servingtrans: ""
+  servingpoly: 0.1
+  servingmono: 0.04
+  servingcholesterol: ""
+  servingsodium: 6
+  servingcarbohydrates: 4.8
+  servingfiber: 1.5
+  servingsugar: 3.23
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: 3.3
+  servingprotein: 1.08
 - name: Apple (fuji) (365)
+  nickname: Apple
   status: 1-Active
   group: 3-Venti
   category: 4-Fruit
   store: WF
-  brand: 365 Organic Fuji Apple
+  fullname: 365 Organic Fuji Apple
   breakfast: ""
   lunch: true
   dinner: ""
@@ -2128,7 +2327,8 @@
   costgram: 0.005558035714285715
   servingsize: 192
   quantitymultiplier: 223
-  unit: apples
+  inc: 0
+  prepare: ""
   servingcalories: 121
   servingfat: 0.35
   servingsaturated: ""
@@ -2145,11 +2345,12 @@
   servingnetcarbs: 25
   servingprotein: 0.38
 - name: Avocado (haas) (365)
+  nickname: Avocado
   status: 1-Active
   group: 1-Small
   category: 4-Fruit
   store: WF
-  brand: 365 Organic Medium Hass Avocado
+  fullname: 365 Organic Medium Hass Avocado
   breakfast: ""
   lunch: true
   dinner: true
@@ -2161,7 +2362,8 @@
   costgram: 0.009287297819967844
   servingsize: 136
   quantitymultiplier: 136
-  unit: avocados
+  inc: 0
+  prepare: 405
   servingcalories: 227
   servingfat: 21
   servingsaturated: 2.9
@@ -2178,11 +2380,12 @@
   servingnetcarbs: 3
   servingprotein: 2.666
 - name: Avocado (hass large) (365)
+  nickname: Avocado (L)
   status: 1-Active
   group: 1-Small
   category: 4-Fruit
   store: WF
-  brand: 365 Organic Medium Hass Avocado
+  fullname: 365 Organic Medium Hass Avocado
   breakfast: ""
   lunch: true
   dinner: true
@@ -2194,7 +2397,8 @@
   costgram: 0.009780782076759715
   servingsize: 136
   quantitymultiplier: 206
-  unit: avocados
+  inc: 0
+  prepare: 405
   servingcalories: 227
   servingfat: 21
   servingsaturated: 2.9
@@ -2211,11 +2415,12 @@
   servingnetcarbs: 3
   servingprotein: 2.666
 - name: Banana (365)
+  nickname: Banana
   status: 1-Active
   group: 3-Venti
   category: 4-Fruit
   store: WF
-  brand: 365 Whole Trade Organic Bananas
+  fullname: 365 Whole Trade Organic Bananas
   breakfast: ""
   lunch: true
   dinner: ""
@@ -2227,7 +2432,8 @@
   costgram: 0.0015401785714285712
   servingsize: 152
   quantitymultiplier: 152
-  unit: bananas
+  inc: 0
+  prepare: ""
   servingcalories: 105
   servingfat: 0.39
   servingsaturated: 0.13
@@ -2244,11 +2450,12 @@
   servingnetcarbs: 23.9
   servingprotein: 1.286
 - name: Blackberry (365)
+  nickname: Blackberry
   status: 1-Active
   group: 3-Venti
   category: 4-Fruit
   store: WF
-  brand: 365 Organic Blackberries
+  fullname: 365 Organic Blackberries
   breakfast: ""
   lunch: ""
   dinner: true
@@ -2260,7 +2467,8 @@
   costgram: 0.02970982142857143
   servingsize: 144
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: ""
   servingcalories: 62
   servingfat: 0.71
   servingsaturated: 0.02
@@ -2277,11 +2485,12 @@
   servingnetcarbs: 6
   servingprotein: 2
 - name: Blueberry (365)
+  nickname: Blueberry
   status: 1-Active
   group: 3-Venti
   category: 4-Fruit
   store: WF
-  brand: 365 Organic Blueberries
+  fullname: 365 Organic Blueberries
   breakfast: ""
   lunch: ""
   dinner: true
@@ -2293,7 +2502,8 @@
   costgram: 0.014843750000000001
   servingsize: 148
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: ""
   servingcalories: 84
   servingfat: 0.49
   servingsaturated: 0.04
@@ -2310,11 +2520,12 @@
   servingnetcarbs: 17.4
   servingprotein: 1.095
 - name: Coconut (Edward & Sons)
+  nickname: Coconut
   status: 1-Active
   group: 3-Venti
   category: 4-Fruit
   store: WF
-  brand: Edward & Sons Organic Unsweetened Shredded Coconut
+  fullname: Edward & Sons Organic Unsweetened Shredded Coconut
   breakfast: ""
   lunch: ""
   dinner: true
@@ -2326,7 +2537,8 @@
   costgram: 0.016785714285714286
   servingsize: 15
   quantitymultiplier: 1
-  unit: grams
+  inc: 0
+  prepare: 406
   servingcalories: 100
   servingfat: 10
   servingsaturated: 9
@@ -2343,11 +2555,12 @@
   servingnetcarbs: 2
   servingprotein: 1
 - name: Pear (danjou) (365)
+  nickname: Pear
   status: 1-Active
   group: 3-Venti
   category: 4-Fruit
   store: WF
-  brand: 365 D'Anjou Pear
+  fullname: 365 DAnjou Pear
   breakfast: ""
   lunch: true
   dinner: ""
@@ -2359,7 +2572,8 @@
   costgram: 0.0051116071428571426
   servingsize: 70
   quantitymultiplier: 215
-  unit: pears
+  inc: 0
+  prepare: ""
   servingcalories: 46
   servingfat: 0.07
   servingsaturated: ""
@@ -2376,11 +2590,12 @@
   servingnetcarbs: 8.8
   servingprotein: 0.308
 - name: Raisins (365)
+  nickname: Raisins
   status: 1-Active
   group: 3-Venti
   category: 4-Fruit
   store: WF
-  brand: 365 Organic Dried Fruit, California Raisins - Sun Dried
+  fullname: 365 Organic Dried Fruit, California Raisins - Sun Dried
   breakfast: ""
   lunch: ""
   dinner: ""
@@ -2393,6 +2608,7 @@
   servingsize: 40
   quantitymultiplier: 1
   unit: grams
+  prepare: ""
   servingcalories: 120
   servingfat: 0
   servingsaturated: ""
@@ -2409,11 +2625,12 @@
   servingnetcarbs: 29
   servingprotein: 1
 - name: Rasberry (365)
+  nickname: Rasberry
   status: 1-Active
   group: 3-Venti
   category: 4-Fruit
   store: WF
-  brand: 365 Organic Rasberries
+  fullname: 365 Organic Rasberries
   breakfast: true
   lunch: ""
   dinner: ""
@@ -2426,6 +2643,7 @@
   servingsize: 61.5
   quantitymultiplier: 1
   unit: grams
+  prepare: ""
   servingcalories: 32
   servingfat: 0.4
   servingsaturated: 0.01
@@ -2442,11 +2660,12 @@
   servingnetcarbs: 3
   servingprotein: 0.738
 - name: Strawberry (365)
+  nickname: Strawberry
   status: 1-Active
   group: 3-Venti
   category: 4-Fruit
   store: WF
-  brand: 365 Organic Strawberries
+  fullname: 365 Organic Strawberries
   breakfast: ""
   lunch: ""
   dinner: true
@@ -2459,6 +2678,7 @@
   servingsize: 144
   quantitymultiplier: 1
   unit: grams
+  prepare: ""
   servingcalories: 46
   servingfat: 0.43
   servingsaturated: 0.02
@@ -2475,11 +2695,12 @@
   servingnetcarbs: 8.1
   servingprotein: 0.965
 - name: Blue Cheese (365)
+  nickname: Blue
   status: 1-Active
   group: 1-Small
   category: 5-Dairy
   store: WF
-  brand: 365 Organic Blue Cheese Crumbles
+  fullname: 365 Organic Blue Cheese Crumbles
   breakfast: ""
   lunch: ""
   dinner: true
@@ -2492,6 +2713,7 @@
   servingsize: 28.349523125
   quantitymultiplier: 1
   unit: grams
+  prepare: 424
   servingcalories: 100
   servingfat: 8
   servingsaturated: 5
@@ -2508,11 +2730,12 @@
   servingnetcarbs: 1
   servingprotein: 6
 - name: Butter (Vital)
+  nickname: Butter
   status: 1-Active
   group: 3-Venti
   category: 5-Dairy
   store: WF
-  brand: Vital Unsalted Grass Fed Butter
+  fullname: Vital Unsalted Grass Fed Butter
   breakfast: true
   lunch: ""
   dinner: ""
@@ -2525,6 +2748,7 @@
   servingsize: 14
   quantitymultiplier: 14
   unit: tbsp
+  prepare: 423
   servingcalories: 110
   servingfat: 12
   servingsaturated: 8
@@ -2541,11 +2765,12 @@
   servingnetcarbs: 0
   servingprotein: ""
 - name: Feta Cheese (365)
+  nickname: Feta
   status: 1-Active
   group: 1-Small
   category: 5-Dairy
   store: WF
-  brand: 365 Crumbled Feta Cheese
+  fullname: 365 Crumbled Feta Cheese
   breakfast: ""
   lunch: ""
   dinner: true
@@ -2558,6 +2783,7 @@
   servingsize: 28
   quantitymultiplier: 1
   unit: grams
+  prepare: 422
   servingcalories: 70
   servingfat: 4
   servingsaturated: 2.5
@@ -2574,11 +2800,12 @@
   servingnetcarbs: 2
   servingprotein: 6
 - name: Manchego Cheese (Mitica)
+  nickname: Manchego
   status: 1-Active
   group: 2-Grande
   category: 5-Dairy
   store: WF
-  brand: Mitica 1 Year Raw Manchego
+  fullname: Mitica 1 Year Raw Manchego (Sheep)
   breakfast: ""
   lunch: ""
   dinner: true
@@ -2591,6 +2818,7 @@
   servingsize: 30
   quantitymultiplier: 1
   unit: grams
+  prepare: 500
   servingcalories: 120
   servingfat: 7
   servingsaturated: ""
@@ -2607,11 +2835,12 @@
   servingnetcarbs: 0
   servingprotein: 7
 - name: Milk (Horizon Organic)
+  nickname: Milk
   status: 1-Active
   group: 3-Venti
   category: 5-Dairy
   store: WF
-  brand: Horizon Organic Whole Milk with DHA Omega-3
+  fullname: Horizon Organic Whole Milk with DHA Omega-3
   breakfast: ""
   lunch: ""
   dinner: ""
@@ -2624,6 +2853,7 @@
   servingsize: 245
   quantitymultiplier: 245
   unit: cups
+  prepare: ""
   servingcalories: 170
   servingfat: 9
   servingsaturated: 5
@@ -2639,12 +2869,48 @@
   servingalcohol: ""
   servingnetcarbs: 13
   servingprotein: 9
-- name: Mozzarella Cheese (365)
+- name: Mitica Cheese (Cordobes)
+  nickname: Mitica
   status: 1-Active
   group: 1-Small
   category: 5-Dairy
   store: WF
-  brand: 365 Part-skim Shredded Mozzarella Cheese
+  fullname: Mitica Cheese (Cordobes)
+  breakfast: ""
+  lunch: ""
+  dinner: true
+  nutrientsurl: https://products.wholefoodsmarket.com/product/mitica-cordobes-1db27a
+  retailurl: https://www.amazon.com/gp/product/B0787Y4Z2X/ref=ox_sc_act_title_5?smid=A32XPZGSYAR2CW&almBrandId=VUZHIFdob2xlIEZvb2Rz&psc=1&fpw=alm
+  cost: ""
+  costounce: ""
+  costlb: 17.99
+  costgram: 0.04015625
+  servingsize: 28
+  quantitymultiplier: 1
+  unit: grams
+  prepare: 500
+  servingcalories: 70
+  servingfat: 5
+  servingsaturated: 3
+  servingtrans: ""
+  servingpoly: ""
+  servingmono: ""
+  servingcholesterol: 20
+  servingsodium: 260
+  servingcarbohydrates: 1
+  servingfiber: ""
+  servingsugar: ""
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: 1
+  servingprotein: 5
+- name: Mozzarella Cheese (365)
+  nickname: Mozzarella
+  status: 1-Active
+  group: 1-Small
+  category: 5-Dairy
+  store: WF
+  fullname: 365 Part-skim Shredded Mozzarella Cheese
   breakfast: true
   lunch: ""
   dinner: true
@@ -2657,6 +2923,7 @@
   servingsize: 28
   quantitymultiplier: 1
   unit: grams
+  prepare: 420
   servingcalories: 80
   servingfat: 5
   servingsaturated: 3
@@ -2673,11 +2940,12 @@
   servingnetcarbs: 0.8
   servingprotein: 8
 - name: Parmesan Cheese (365)
+  nickname: Parmesan
   status: 1-Active
   group: 1-Small
   category: 5-Dairy
   store: WF
-  brand: 365 Shredded Parmesan Cheese
+  fullname: 365 Shredded Parmesan Cheese
   breakfast: ""
   lunch: ""
   dinner: true
@@ -2690,6 +2958,7 @@
   servingsize: 5
   quantitymultiplier: 1
   unit: grams
+  prepare: 421
   servingcalories: 20
   servingfat: 1.5
   servingsaturated: 1
@@ -2705,12 +2974,48 @@
   servingalcohol: ""
   servingnetcarbs: 0
   servingprotein: 2
+- name: Robusto Gouda (Kaasaggio)
+  nickname: Gouda
+  status: 1-Active
+  group: 1-Small
+  category: 5-Dairy
+  store: WF
+  fullname: KAASAGGIO Robusto Gouda
+  breakfast: ""
+  lunch: ""
+  dinner: true
+  nutrientsurl: https://products.wholefoodsmarket.com/product/kaasaggio-robusto-gouda-f3692d
+  retailurl: https://www.amazon.com/gp/product/B079VFMRCB/ref=ox_sc_act_title_7?smid=A32XPZGSYAR2CW&almBrandId=VUZHIFdob2xlIEZvb2Rz&psc=1&fpw=alm
+  cost: ""
+  costounce: ""
+  costlb: 16.99
+  costgram: 0.03792410714285714
+  servingsize: 28
+  quantitymultiplier: 1
+  unit: grams
+  prepare: 500
+  servingcalories: 104
+  servingfat: 8
+  servingsaturated: 5
+  servingtrans: ""
+  servingpoly: ""
+  servingmono: ""
+  servingcholesterol: 20
+  servingsodium: 230
+  servingcarbohydrates: ""
+  servingfiber: ""
+  servingsugar: ""
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: ""
+  servingprotein: 7
 - name: String Cheese (365)
+  nickname: String Cheese
   status: 1-Active
   group: 3-Venti
   category: 5-Dairy
   store: WF
-  brand: 365 Organic String Cheese
+  fullname: 365 Organic String Cheese
   breakfast: ""
   lunch: true
   dinner: ""
@@ -2723,6 +3028,7 @@
   servingsize: 28
   quantitymultiplier: 28
   unit: sticks
+  prepare: ""
   servingcalories: 80
   servingfat: 6
   servingsaturated: 3.5
@@ -2739,11 +3045,12 @@
   servingnetcarbs: 0
   servingprotein: 7
 - name: Swiss Cheese Slices (365)
+  nickname: Swiss Slice
   status: 1-Active
   group: 3-Venti
   category: 5-Dairy
   store: WF
-  brand: 365 Swiss Cheese Slices
+  fullname: 365 Swiss Cheese Slices
   breakfast: ""
   lunch: true
   dinner: ""
@@ -2756,6 +3063,7 @@
   servingsize: 23
   quantitymultiplier: 23
   unit: slices
+  prepare: ""
   servingcalories: 90
   servingfat: 7
   servingsaturated: 4
@@ -2772,11 +3080,12 @@
   servingnetcarbs: 0
   servingprotein: 7
 - name: Almond Butter (365)
+  nickname: Almond Butter
   status: 1-Active
   group: 3-Venti
   category: 6-Nuts
   store: WF
-  brand: 365 Almond Butter
+  fullname: 365 Almond Butter
   breakfast: ""
   lunch: true
   dinner: ""
@@ -2789,6 +3098,7 @@
   servingsize: 32
   quantitymultiplier: 16
   unit: tbsp
+  prepare: ""
   servingcalories: 190
   servingfat: 17
   servingsaturated: 1.5
@@ -2805,11 +3115,12 @@
   servingnetcarbs: 4
   servingprotein: 7
 - name: Almonds (365)
+  nickname: Almonds
   status: 1-Active
   group: 2-Grande
   category: 6-Nuts
   store: WF
-  brand: 365 Everyday Value Almonds
+  fullname: 365 Everyday Value Almonds
   breakfast: ""
   lunch: true
   dinner: true
@@ -2822,6 +3133,7 @@
   servingsize: 28
   quantitymultiplier: 1
   unit: grams
+  prepare: 432
   servingcalories: 160
   servingfat: 14
   servingsaturated: 1
@@ -2837,12 +3149,13 @@
   servingalcohol: ""
   servingnetcarbs: 2
   servingprotein: 6
-- name: Macademia (Aurora)
+- name: Macadamia (Aurora)
+  nickname: Macadamia
   status: 1-Active
   group: 2-Grande
   category: 6-Nuts
   store: WF
-  brand: Aurora Organic Raw Macadamia Nuts
+  fullname: Aurora Organic Raw Macadamia Nuts
   breakfast: ""
   lunch: ""
   dinner: true
@@ -2855,6 +3168,7 @@
   servingsize: 30
   quantitymultiplier: 1
   unit: grams
+  prepare: 433
   servingcalories: 220
   servingfat: 23
   servingsaturated: 3.5
@@ -2871,11 +3185,12 @@
   servingnetcarbs: 1
   servingprotein: 2
 - name: Peanut Butter (Once Again)
+  nickname: Peanut Butter
   status: 1-Active
   group: 3-Venti
   category: 6-Nuts
   store: WF
-  brand: Once Again Creamy Peanut Butter
+  fullname: Once Again Creamy Peanut Butter
   breakfast: ""
   lunch: true
   dinner: ""
@@ -2888,6 +3203,7 @@
   servingsize: 30
   quantitymultiplier: 15
   unit: tbsp
+  prepare: ""
   servingcalories: 190
   servingfat: 14
   servingsaturated: 2
@@ -2904,11 +3220,12 @@
   servingnetcarbs: 5
   servingprotein: 8
 - name: Peanuts (365)
+  nickname: Peanuts
   status: 1-Active
   group: 2-Grande
   category: 6-Nuts
   store: WF
-  brand: 365 Dry Roasted And Unsalted Peanuts
+  fullname: 365 Dry Roasted And Unsalted Peanuts
   breakfast: ""
   lunch: true
   dinner: true
@@ -2921,6 +3238,7 @@
   servingsize: 28
   quantitymultiplier: 1
   unit: grams
+  prepare: 434
   servingcalories: 160
   servingfat: 14
   servingsaturated: 2
@@ -2937,11 +3255,12 @@
   servingnetcarbs: 4
   servingprotein: 7
 - name: Pecans (365)
+  nickname: Pecans
   status: 1-Active
   group: 1-Small
   category: 6-Nuts
   store: WF
-  brand: 365 Pecan Halves
+  fullname: 365 Pecan Halves
   breakfast: ""
   lunch: true
   dinner: true
@@ -2954,6 +3273,7 @@
   servingsize: 28
   quantitymultiplier: 1
   unit: grams
+  prepare: 430
   servingcalories: 190
   servingfat: 20
   servingsaturated: 2
@@ -2970,11 +3290,12 @@
   servingnetcarbs: 1
   servingprotein: 3
 - name: Sunflower Butter (Once Again)
+  nickname: Sunflower Butter
   status: 1-Active
   group: 3-Venti
   category: 6-Nuts
   store: WF
-  brand: Once Again Sunflower Seed Butter
+  fullname: Once Again Sunflower Seed Butter
   breakfast: ""
   lunch: true
   dinner: ""
@@ -2987,6 +3308,7 @@
   servingsize: 30
   quantitymultiplier: 15
   unit: tbsp
+  prepare: ""
   servingcalories: 210
   servingfat: 19
   servingsaturated: 2
@@ -3003,11 +3325,12 @@
   servingnetcarbs: 1
   servingprotein: 5
 - name: Walnuts (365)
+  nickname: Walnuts
   status: 1-Active
   group: 1-Small
   category: 6-Nuts
   store: WF
-  brand: 365 Walnut Halves and Pieces
+  fullname: 365 Walnut Halves and Pieces
   breakfast: ""
   lunch: true
   dinner: true
@@ -3020,6 +3343,7 @@
   servingsize: 28
   quantitymultiplier: 1
   unit: grams
+  prepare: 431
   servingcalories: 190
   servingfat: 18
   servingsaturated: 1
@@ -3036,11 +3360,12 @@
   servingnetcarbs: 2
   servingprotein: 4
 - name: Chia Seeds (365)
+  nickname: Chia
   status: 1-Active
   group: 1-Small
   category: 7-Seeds
   store: WF
-  brand: 365 Organic Black Chia Seed
+  fullname: 365 Organic Black Chia Seed
   breakfast: true
   lunch: ""
   dinner: ""
@@ -3053,6 +3378,7 @@
   servingsize: 30
   quantitymultiplier: 10
   unit: tbsp
+  prepare: 442
   servingcalories: 160
   servingfat: 11
   servingsaturated: 1
@@ -3069,11 +3395,12 @@
   servingnetcarbs: 0
   servingprotein: 6
 - name: Pumpkin Seeds (365)
+  nickname: Pumpkin
   status: 1-Active
   group: 1-Small
   category: 7-Seeds
   store: WF
-  brand: 365 Organic Pumpkin Seeds
+  fullname: 365 Organic Pumpkin Seeds
   breakfast: ""
   lunch: ""
   dinner: true
@@ -3086,6 +3413,7 @@
   servingsize: 28
   quantitymultiplier: 1
   unit: grams
+  prepare: 440
   servingcalories: 160
   servingfat: 14
   servingsaturated: 2.5
@@ -3102,11 +3430,12 @@
   servingnetcarbs: 1
   servingprotein: 8
 - name: Bread (Alvarado Street Bakery)
+  nickname: Bread
   status: 1-Active
   group: 3-Venti
   category: 8-Bread
   store: WF
-  brand: Alvarado Street Bakery Sprouted Whole Wheat Bread
+  fullname: Alvarado Street Bakery Sprouted Whole Wheat Bread
   breakfast: true
   lunch: true
   dinner: ""
@@ -3119,6 +3448,7 @@
   servingsize: 38
   quantitymultiplier: 38
   unit: slices
+  prepare: ""
   servingcalories: 90
   servingfat: ""
   servingsaturated: ""
@@ -3135,11 +3465,12 @@
   servingnetcarbs: 15
   servingprotein: 6
 - name: Bread (Ezekiel)
+  nickname: Bread
   status: 1-Active
   group: 3-Venti
   category: 8-Bread
   store: WF
-  brand: Ezekiel 4:9 Original Bread
+  fullname: Ezekiel 4:9 Original Bread
   breakfast: ""
   lunch: true
   dinner: ""
@@ -3152,6 +3483,7 @@
   servingsize: 34
   quantitymultiplier: 34
   unit: slices
+  prepare: ""
   servingcalories: 80
   servingfat: 0.5
   servingsaturated: ""
@@ -3168,11 +3500,12 @@
   servingnetcarbs: 12
   servingprotein: 5
 - name: Pizza Crust (Caulipower)
+  nickname: Pizza Crust
   status: 1-Active
   group: 3-Venti
   category: 8-Bread
   store: WF
-  brand: Caulipower Cauliflower Pizza Crust
+  fullname: Caulipower Cauliflower Pizza Crust
   breakfast: ""
   lunch: ""
   dinner: true
@@ -3185,6 +3518,7 @@
   servingsize: 52
   quantitymultiplier: 26
   unit: pieces
+  prepare: ""
   servingcalories: 170
   servingfat: 5
   servingsaturated: 0.5
@@ -3200,12 +3534,13 @@
   servingalcohol: ""
   servingnetcarbs: 28
   servingprotein: 3
-- name: 100% Dark Chocolate Bar (GH)
+- name: Ghirardelli 100%
+  nickname: Ghirardelli 100%
   status: 1-Active
   group: 1-Venti
   category: 9-Snack
   store: GH
-  brand: Ghiradelli 100% Cacao
+  fullname: Ghiradelli 100% Cacao
   breakfast: ""
   lunch: ""
   dinner: true
@@ -3216,8 +3551,9 @@
   costlb: 15.8
   costgram: 0.03526785714285714
   servingsize: 14
-  quantitymultiplier: 14
+  quantitymultiplier: 3.5
   unit: squares
+  prepare: 502
   servingcalories: 70
   servingfat: 8
   servingsaturated: 4.5
@@ -3233,12 +3569,13 @@
   servingalcohol: ""
   servingnetcarbs: 3
   servingprotein: 2
-- name: 70% Dark Chocolate Bar (GH)
+- name: Ghirardelli 70%
+  nickname: Ghirardelli 70%
   status: 1-Active
   group: 1-Venti
   category: 9-Snack
   store: GH
-  brand: Ghiradelli 70% Cacao
+  fullname: Ghiradelli 70% Cacao
   breakfast: ""
   lunch: ""
   dinner: true
@@ -3249,8 +3586,9 @@
   costlb: 15.8
   costgram: 0.03526785714285714
   servingsize: 14
-  quantitymultiplier: 14
+  quantitymultiplier: 3.5
   unit: squares
+  prepare: 502
   servingcalories: 80
   servingfat: 7
   servingsaturated: 4
@@ -3266,12 +3604,13 @@
   servingalcohol: ""
   servingnetcarbs: 5
   servingprotein: 1
-- name: 72% Intense Dark Chocolate (GH)
+- name: Ghirardelli 72%
+  nickname: Ghirardelli 72%
   status: 1-Active
   group: 1-Venti
   category: 9-Snack
   store: GH
-  brand: Ghiradelli Intense Dark 72% Cacao
+  fullname: Ghiradelli Intense Dark 72% Cacao
   breakfast: ""
   lunch: ""
   dinner: true
@@ -3282,8 +3621,9 @@
   costlb: 16.48181818181818
   costgram: 0.036789772727272727
   servingsize: 32
-  quantitymultiplier: 10.666666666666666
+  quantitymultiplier: 8
   unit: squares
+  prepare: 502
   servingcalories: 170
   servingfat: 15
   servingsaturated: 9
@@ -3299,12 +3639,13 @@
   servingalcohol: ""
   servingnetcarbs: 11
   servingprotein: 2
-- name: 85% Dark Chocolate Bar (Divine)
+- name: Divine 85%
+  nickname: Divine 85%
   status: 1-Active
   group: 1-Small
   category: 9-Snack
   store: WF
-  brand: Divine 85% Exquisitely Rich Dark Chocolate
+  fullname: Divine 85% Exquisitely Rich Dark Chocolate
   breakfast: ""
   lunch: ""
   dinner: true
@@ -3317,6 +3658,7 @@
   servingsize: 28
   quantitymultiplier: 3.5
   unit: squares
+  prepare: 502
   servingcalories: 170
   servingfat: 14
   servingsaturated: 9
@@ -3333,11 +3675,12 @@
   servingnetcarbs: 7
   servingprotein: 2
 - name: Mango Slices (365)
+  nickname: Mango Slices
   status: 1-Active
   group: 3-Venti
   category: 9-Snack
   store: WF
-  brand: 365 Dried Mangoes
+  fullname: 365 Dried Mangoes
   breakfast: ""
   lunch: ""
   dinner: ""
@@ -3350,6 +3693,7 @@
   servingsize: 40
   quantitymultiplier: 5.714285714285714
   unit: slices
+  prepare: 502
   servingcalories: 22.857142857142858
   servingfat: 0.14285714285714285
   servingsaturated: ""
@@ -3365,12 +3709,48 @@
   servingalcohol: ""
   servingnetcarbs: 5.142857142857143
   servingprotein: 0.2857142857142857
-- name: Eggs (hard boiled) (Vital)
+- name: Whole Turkey (365)
+  nickname: Whole Turkey
   status: 2-Inactive
   group: 3-Venti
-  category: 2-Meat
+  category: 2a-Meat
   store: WF
-  brand: Vital Farms Pasture-Raised Hard Boiled Eggs
+  fullname: 365 Organic Fresh Young Whole Chicken
+  breakfast: ""
+  lunch: ""
+  dinner: true
+  nutrientsurl: https://products.wholefoodsmarket.com/product/whole-foods-market-organic-fresh-young-whole-chicken-6a1b32
+  retailurl: ""
+  cost: ""
+  costounce: ""
+  costlb: 2.99
+  costgram: 0.006674107142857143
+  servingsize: 113.3980925
+  quantitymultiplier: 1
+  unit: grams
+  prepare: ""
+  servingcalories: 240
+  servingfat: 17
+  servingsaturated: 4.5
+  servingtrans: ""
+  servingpoly: ""
+  servingmono: ""
+  servingcholesterol: 100
+  servingsodium: 80
+  servingcarbohydrates: ""
+  servingfiber: ""
+  servingsugar: ""
+  servingsugarplus: ""
+  servingalcohol: ""
+  servingnetcarbs: 0
+  servingprotein: 21
+- name: Eggs (hard boiled) (Vital)
+  nickname: Eggs
+  status: 2-Inactive
+  group: 3-Venti
+  category: 2b-Meat
+  store: WF
+  fullname: Vital Farms Pasture-Raised Hard Boiled Eggs
   breakfast: ""
   lunch: ""
   dinner: true
@@ -3383,6 +3763,7 @@
   servingsize: 44
   quantitymultiplier: 44
   unit: eggs
+  prepare: ""
   servingcalories: 50
   servingfat: 4
   servingsaturated: 1.5
@@ -3399,11 +3780,12 @@
   servingnetcarbs: 0
   servingprotein: 6
 - name: Fish (salmon smoked) (Duck Trap)
+  nickname: Smoked Salmon
   status: 2-Inactive
   group: 3-Venti
-  category: 2-Meat
+  category: 2b-Meat
   store: WF
-  brand: Duck Trap River Fish Farm Smoked Wild Salmon
+  fullname: Duck Trap River Fish Farm Smoked Wild Salmon
   breakfast: ""
   lunch: ""
   dinner: true
@@ -3416,6 +3798,7 @@
   servingsize: 56.69904625
   quantitymultiplier: 1
   unit: grams
+  prepare: ""
   servingcalories: 80
   servingfat: 2.5
   servingsaturated: ""
@@ -3432,11 +3815,12 @@
   servingnetcarbs: 0
   servingprotein: 13
 - name: Pork (ham slices) (WF)
+  nickname: Pork Slices
   status: 2-Inactive
   group: 3-Venti
-  category: 2-Meat
+  category: 2b-Meat
   store: WF
-  brand: 365 Organic Uncured Black Forest Ham
+  fullname: 365 Organic Uncured Black Forest Ham
   breakfast: true
   lunch: true
   dinner: ""
@@ -3449,6 +3833,7 @@
   servingsize: 56.69904625
   quantitymultiplier: 6.299894027777778
   unit: slices
+  prepare: ""
   servingcalories: 60
   servingfat: 1
   servingsaturated: ""
@@ -3464,45 +3849,13 @@
   servingalcohol: ""
   servingnetcarbs: 0.8
   servingprotein: 11
-- name: Whole Turkey (365)
-  status: 2-Inactive
-  group: 3-Venti
-  category: 2-Meat
-  store: WF
-  brand: 365 Organic Fresh Young Whole Chicken
-  breakfast: ""
-  lunch: ""
-  dinner: true
-  nutrientsurl: https://products.wholefoodsmarket.com/product/whole-foods-market-organic-fresh-young-whole-chicken-6a1b32
-  retailurl: ""
-  cost: ""
-  costounce: ""
-  costlb: 2.99
-  costgram: 0.006674107142857143
-  servingsize: 113.3980925
-  quantitymultiplier: 1
-  unit: grams
-  servingcalories: 240
-  servingfat: 17
-  servingsaturated: 4.5
-  servingtrans: ""
-  servingpoly: ""
-  servingmono: ""
-  servingcholesterol: 100
-  servingsodium: 80
-  servingcarbohydrates: ""
-  servingfiber: ""
-  servingsugar: ""
-  servingsugarplus: ""
-  servingalcohol: ""
-  servingnetcarbs: 0
-  servingprotein: 21
 - name: Cabbage (green) (365)
+  nickname: Cabbage
   status: 2-Inactive
   group: 3-Venti
   category: 3a-Veg
   store: WF
-  brand: 365 Organic Green Cabbage
+  fullname: 365 Organic Green Cabbage
   breakfast: ""
   lunch: ""
   dinner: true
@@ -3515,6 +3868,7 @@
   servingsize: 89
   quantitymultiplier: 1
   unit: grams
+  prepare: ""
   servingcalories: 22
   servingfat: 0.09
   servingsaturated: 0.03
@@ -3530,45 +3884,13 @@
   servingalcohol: ""
   servingnetcarbs: 2.8
   servingprotein: 1.14
-- name: Collard Green (365)
-  status: 2-Inactive
-  group: 2-Grande
-  category: 3a-Veg
-  store: WF
-  brand: 365 Organic Collard Green
-  breakfast: ""
-  lunch: ""
-  dinner: true
-  nutrientsurl: https://products.wholefoodsmarket.com/product/organic-collard-greens-e808f0
-  retailurl: https://www.amazon.com/Greens-Collard-Organic-1-Each/dp/B0785VRYVH/ref=sr_1_1?almBrandId=VUZHIFdob2xlIEZvb2Rz&crid=13PHZWBUN9IKV&dchild=1&fpw=alm&keywords=collard+greens&qid=1610152077&s=wholefoods&sprefix=collard%2Cwholefoods%2C219&sr=1-1
-  cost: 1.99
-  costounce: ""
-  costlb: ""
-  costgram: 0
-  servingsize: 36
-  quantitymultiplier: 1
-  unit: grams
-  servingcalories: 12
-  servingfat: 0.22
-  servingsaturated: 0.02
-  servingtrans: ""
-  servingpoly: 0.072
-  servingmono: 0.011
-  servingcholesterol: ""
-  servingsodium: 6
-  servingcarbohydrates: 2
-  servingfiber: 1.4
-  servingsugar: 0.17
-  servingsugarplus: ""
-  servingalcohol: ""
-  servingnetcarbs: 0.6000000000000001
-  servingprotein: 1.09
 - name: Romaine Lettuce (Organicgirl)
+  nickname: Romaine
   status: 2-Inactive
   group: 3-Venti
   category: 3a-Veg
   store: WF
-  brand: Organicgirl Romaine Heart Leaves
+  fullname: Organicgirl Romaine Heart Leaves
   breakfast: ""
   lunch: ""
   dinner: true
@@ -3581,6 +3903,7 @@
   servingsize: 85.048569375
   quantitymultiplier: 1
   unit: grams
+  prepare: ""
   servingcalories: 15
   servingfat: 0
   servingsaturated: ""
@@ -3597,11 +3920,12 @@
   servingnetcarbs: 1
   servingprotein: 1
 - name: Spinach (365)
+  nickname: Spinach
   status: 2-Inactive
   group: 1-Small
   category: 3a-Veg
   store: WF
-  brand: 365 Organic Packaged Baby Spinach
+  fullname: 365 Organic Packaged Baby Spinach
   breakfast: true
   lunch: ""
   dinner: true
@@ -3614,6 +3938,7 @@
   servingsize: 141.747615625
   quantitymultiplier: 1
   unit: grams
+  prepare: ""
   servingcalories: 34.5
   servingfat: 0.06
   servingsaturated: 0.1
@@ -3630,11 +3955,12 @@
   servingnetcarbs: 2.2
   servingprotein: 4.3
 - name: Habanero Pepper (365)
+  nickname: Habanero
   status: 2-Inactive
   group: 3-Venti
   category: 3b-Veg
   store: WF
-  brand: 365 Habanero Pepper
+  fullname: 365 Habanero Pepper
   breakfast: true
   lunch: ""
   dinner: ""
@@ -3647,6 +3973,7 @@
   servingsize: 45
   quantitymultiplier: 5
   unit: peppers
+  prepare: ""
   servingcalories: 18
   servingfat: 0.2
   servingsaturated: ""
@@ -3663,11 +3990,12 @@
   servingnetcarbs: 3.3
   servingprotein: 0.8
 - name: Jalapeno Pepper (365)
+  nickname: Jalapeno
   status: 2-Inactive
   group: 3-Venti
   category: 3b-Veg
   store: WF
-  brand: 365 Organic Green Jalapeno Pepper
+  fullname: 365 Organic Green Jalapeno Pepper
   breakfast: true
   lunch: ""
   dinner: ""
@@ -3680,6 +4008,7 @@
   servingsize: 20
   quantitymultiplier: 1
   unit: grams
+  prepare: ""
   servingcalories: 4.1
   servingfat: 0.05
   servingsaturated: 0.01
@@ -3696,11 +4025,12 @@
   servingnetcarbs: 0.52
   servingprotein: 0.13
 - name: Mushrooms (portabella) (365)
+  nickname: Mushrooms
   status: 2-Inactive
   group: 3-Venti
   category: 3b-Veg
   store: WF
-  brand: Sliced Portobello Mushrooms
+  fullname: Sliced Portobello Mushrooms
   breakfast: true
   lunch: ""
   dinner: true
@@ -3713,6 +4043,7 @@
   servingsize: 85.048569375
   quantitymultiplier: 1
   unit: grams
+  prepare: ""
   servingcalories: 19
   servingfat: 0.3
   servingsaturated: 0.05
@@ -3729,11 +4060,12 @@
   servingnetcarbs: 2.1999999999999997
   servingprotein: 1.815
 - name: Nori (gimme)
+  nickname: Nori
   status: 2-Inactive
   group: 3-Venti
   category: 3b-Veg
   store: WF
-  brand: gimMe Organic Roasted Seaweed - Restaurant-style Sushi Nori Sheets
+  fullname: gimMe Organic Roasted Seaweed - Restaurant-style Sushi Nori Sheets
   breakfast: ""
   lunch: ""
   dinner: true
@@ -3746,6 +4078,7 @@
   servingsize: 2.6
   quantitymultiplier: 2.6
   unit: sheets
+  prepare: ""
   servingcalories: 5
   servingfat: ""
   servingsaturated: ""
@@ -3762,11 +4095,12 @@
   servingnetcarbs: 0
   servingprotein: 1
 - name: Salsa (Casa Sanchez)
+  nickname: Salsa
   status: 2-Inactive
   group: 3-Venti
   category: 3b-Veg
   store: WF
-  brand: Casa Sanchez Hot Salsa Roja
+  fullname: Casa Sanchez Hot Salsa Roja
   breakfast: true
   lunch: ""
   dinner: ""
@@ -3779,6 +4113,7 @@
   servingsize: 30
   quantitymultiplier: 15
   unit: tbsp
+  prepare: ""
   servingcalories: 5
   servingfat: 0
   servingsaturated: ""
@@ -3795,11 +4130,12 @@
   servingnetcarbs: 1
   servingprotein: 0
 - name: Grapefruit (365)
+  nickname: Grapefruit
   status: 2-Inactive
   group: 3-Venti
   category: 4-Fruit
   store: WF
-  brand: 365 Organic Red Grapefruit
+  fullname: 365 Organic Red Grapefruit
   breakfast: ""
   lunch: true
   dinner: ""
@@ -3812,6 +4148,7 @@
   servingsize: 123
   quantitymultiplier: 246
   unit: grapefruits
+  prepare: ""
   servingcalories: 104
   servingfat: 0.34
   servingsaturated: 0.06
@@ -3828,11 +4165,12 @@
   servingnetcarbs: 22
   servingprotein: 1.9
 - name: Orange (365)
+  nickname: Orange
   status: 2-Inactive
   group: 3-Venti
   category: 4-Fruit
   store: WF
-  brand: 365 Naval Orange
+  fullname: 365 Naval Orange
   breakfast: ""
   lunch: true
   dinner: ""
@@ -3845,6 +4183,7 @@
   servingsize: 140
   quantitymultiplier: 140
   unit: oranges
+  prepare: ""
   servingcalories: 69
   servingfat: 0.21
   servingsaturated: 0.02
@@ -3861,11 +4200,12 @@
   servingnetcarbs: 14.9
   servingprotein: 1.274
 - name: Pear (barlett) (365)
+  nickname: Pear
   status: 2-Inactive
   group: 3-Venti
   category: 4-Fruit
   store: WF
-  brand: 365 Barlett Pear
+  fullname: 365 Barlett Pear
   breakfast: ""
   lunch: true
   dinner: ""
@@ -3878,6 +4218,7 @@
   servingsize: 177
   quantitymultiplier: 177
   unit: pears
+  prepare: ""
   servingcalories: 112
   servingfat: 0.28
   servingsaturated: ""
@@ -3894,11 +4235,12 @@
   servingnetcarbs: 22
   servingprotein: 0.69
 - name: Pear (comice) (365)
+  nickname: Pear
   status: 2-Inactive
   group: 3-Venti
   category: 4-Fruit
   store: WF
-  brand: 365 Comice Pear
+  fullname: 365 Comice Pear
   breakfast: ""
   lunch: true
   dinner: ""
@@ -3911,6 +4253,7 @@
   servingsize: 70
   quantitymultiplier: 175
   unit: pears
+  prepare: ""
   servingcalories: 46
   servingfat: 0.07
   servingsaturated: 0.04
@@ -3927,11 +4270,12 @@
   servingnetcarbs: 8.8
   servingprotein: 0.31
 - name: Blue Cheese (Pt Reyes)
+  nickname: Blue
   status: 2-Inactive
   group: 3-Venti
   category: 5-Dairy
   store: WF
-  brand: Original Point Reyes Blue Cheese
+  fullname: Original Point Reyes Blue Cheese
   breakfast: ""
   lunch: ""
   dinner: true
@@ -3944,6 +4288,7 @@
   servingsize: 28
   quantitymultiplier: 1
   unit: grams
+  prepare: ""
   servingcalories: 100
   servingfat: 8
   servingsaturated: 5
@@ -3960,11 +4305,12 @@
   servingnetcarbs: 0
   servingprotein: 6
 - name: Mexican Blended Cheese (365)
+  nickname: Mexican Blended
   status: 2-Inactive
   group: 3-Venti
   category: 5-Dairy
   store: WF
-  brand: 365 Shredded Mexican Blend
+  fullname: 365 Shredded Mexican Blend
   breakfast: true
   lunch: ""
   dinner: true
@@ -3977,6 +4323,7 @@
   servingsize: 28
   quantitymultiplier: 1
   unit: grams
+  prepare: ""
   servingcalories: 110
   servingfat: 9
   servingsaturated: 5
@@ -3992,12 +4339,13 @@
   servingalcohol: ""
   servingnetcarbs: 0.19999999999999996
   servingprotein: 6
-- name: Almond Butter Pak (Justin's)
+- name: Almond Butter Pak (Justins)
+  nickname: Almond Butter Pak
   status: 2-Inactive
   group: 3-Venti
   category: 9-Snack
   store: WF
-  brand: Justin's Classic Almond Butter
+  fullname: Justin's Classic Almond Butter
   breakfast: ""
   lunch: ""
   dinner: ""
@@ -4010,6 +4358,7 @@
   servingsize: 32
   quantitymultiplier: 32
   unit: tbsp
+  prepare: ""
   servingcalories: 220
   servingfat: 19
   servingsaturated: 3
@@ -4026,11 +4375,12 @@
   servingnetcarbs: 2
   servingprotein: 6
 - name: Cliff Bar (Clif Bar)
+  nickname: Cliff Bar
   status: 2-Inactive
   group: 3-Venti
   category: 9-Snack
   store: WF
-  brand: Clif Bar Cool Mint Chocolate
+  fullname: Clif Bar Cool Mint Chocolate
   breakfast: ""
   lunch: ""
   dinner: ""
@@ -4043,6 +4393,7 @@
   servingsize: 68
   quantitymultiplier: 68
   unit: bars
+  prepare: ""
   servingcalories: 260
   servingfat: 7
   servingsaturated: 2
@@ -4059,11 +4410,12 @@
   servingnetcarbs: 37
   servingprotein: 10
 - name: Think! Bar (Think!)
+  nickname: Think! Bar
   status: 2-Inactive
   group: 3-Venti
   category: 9-Snack
   store: WF
-  brand: "!Think High Protein Bar Chocolate Fudge"
+  fullname: "!Think High Protein Bar Chocolate Fudge"
   breakfast: ""
   lunch: ""
   dinner: ""
@@ -4076,6 +4428,7 @@
   servingsize: 60
   quantitymultiplier: 60
   unit: bars
+  prepare: ""
   servingcalories: 230
   servingfat: 8
   servingsaturated: 3

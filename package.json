@@ -1,6 +1,10 @@
 {
   "dependencies": {
     "lodash": "^4.17.21",
+    "readline-sync": "^1.4.10",
     "yaml": "^1.10.0"
+  },
+  "devDependencies": {
+    "yaml-lint": "^1.2.4"
   }
 }

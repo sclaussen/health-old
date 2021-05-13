@@ -1,6 +1,6 @@
 // Sheet names
 var FOOD_SHEETS = [ 'Food' ];
-var PLAN_SHEETS = [ 'Plan' ];
+var PLAN_SHEETS = [ 'Plan', 'Plan2', 'Plan3', 'Shop' ];
 var LOG_SHEET = "Log";
 var LOGI_SHEET = "LogI";
 
@@ -8,55 +8,61 @@ var LOGI_SHEET = "LogI";
 
 // Food Sheet description of the data portion of the sheet
 var FOOD_RANGE = 'A4:AG200';
-var FOOD_FIRST_DATA_ROW = 5;
-var FOOD_LAST_DATA_ROW = 150;
+var FOOD_FIRST_ROW = 5;
+var FOOD_LAST_ROW = 150;
 
 // Food Sheet Action Locations
 var FOOD_DROPDOWN_ROW = 1;
 var FOOD_DROPDOWN_COL = 1;
 
 // Food Sheet Column Names
-var FOOD_INGREDIENT_COL = 1;
-var FOOD_STATUS_COL = 2;
-var FOOD_GROUP_COL = 3;
-var FOOD_CATEGORY_COL = 4;
-var FOOD_STORE_COL = 5;
-var FOOD_BRAND_COL = 6;
-var FOOD_BREAKFAST_COL = 7;
-var FOOD_LUNCH_COL = 8;
-var FOOD_DINNER_COL = 9;
-var FOOD_NUTRIENTSURL_COL = 10;
-var FOOD_RETAILURL_COL = 11;
-var FOOD_COST_COL = 12;
-var FOOD_COSTOUNCE_COL = 13;
-var FOOD_COSTLB_COL = 14;
-var FOOD_COSTGRAM_COL = 15;
-var FOOD_SERVINGSIZE_COL = 16;
-var FOOD_NORMALIZED_COL = 17;
-var FOOD_UNIT_COL = 18;
-var FOOD_CALORIES_COL = 19;
-var FOOD_FAT_COL = 20;
-var FOOD_SATURATED_COL = 21;
-var FOOD_TRANS_COL = 22;
-var FOOD_POLY_COL = 23;
-var FOOD_MONO_COL = 24;
-var FOOD_CHOLESTEROL_COL = 25;
-var FOOD_SODIUM_COL = 26;
-var FOOD_CARBOHYDRATES_COL = 27;
-var FOOD_FIBER_COL = 28;
-var FOOD_SUGAR_COL = 29;
-var FOOD_SUGARPLUS_COL = 30;
-var FOOD_ALCOHOL_COL = 31;
-var FOOD_NETCARBOHYDRATES_COL = 32;
-var FOOD_PROTEIN_COL = 33;
+var FOOD_NAME_COL = 1;
+var FOOD_NICKNAME_COL = 2;
+var FOOD_STATUS_COL = 3;
+var FOOD_GROUP_COL = 4;
+var FOOD_CATEGORY_COL = 5;
+var FOOD_STORE_COL = 6;
+var FOOD_FULLNAME_COL = 7;
+var FOOD_BREAKFAST_COL = 8;
+var FOOD_LUNCH_COL = 9;
+var FOOD_DINNER_COL = 10;
+var FOOD_NUTRIENTSURL_COL = 11;
+var FOOD_RETAILURL_COL = 12;
+var FOOD_COST_COL = 13;
+var FOOD_COSTOUNCE_COL = 14;
+var FOOD_COSTLB_COL = 15;
+var FOOD_COSTGRAM_COL = 16;
+var FOOD_SERVINGSIZE_COL = 17;
+var FOOD_NORMALIZED_COL = 18;
+var FOOD_UNIT_COL = 19;
+var FOOD_MIN = 20;
+var FOOD_MAX = 21;
+var FOOD_INC = 22;
+var FOOD_PREPARE = 23;
+var FOOD_CALORIES_COL = 24;
+var FOOD_FAT_COL = 25;
+var FOOD_SATURATED_COL = 26;
+var FOOD_TRANS_COL = 27;
+var FOOD_POLY_COL = 28;
+var FOOD_MONO_COL = 29;
+var FOOD_CHOLESTEROL_COL = 30;
+var FOOD_SODIUM_COL = 31;
+var FOOD_CARBOHYDRATES_COL = 32;
+var FOOD_FIBER_COL = 33;
+var FOOD_SUGAR_COL = 34;
+var FOOD_SUGARPLUS_COL = 35;
+var FOOD_ALCOHOL_COL = 36;
+var FOOD_NETCARBOHYDRATES_COL = 37;
+var FOOD_PROTEIN_COL = 38;
 
 var FOOD_COLUMN_NAMES = [
     'name',
+    'nickname',
     'status',
     'group',
     'category',
     'store',
-    'brand',
+    'fullname',
     'breakfast',
     'lunch',
     'dinner',
@@ -67,8 +73,12 @@ var FOOD_COLUMN_NAMES = [
     'costlb',
     'costgram',
     'servingsize',
-    'quantitymultiplier',
+    'servingsmultiplier',
     'unit',
+    'min',
+    'max',
+    'inc',
+    'prepare',
     'servingcalories',
     'servingfat',
     'servingsaturated',
@@ -89,13 +99,16 @@ var FOOD_COLUMN_NAMES = [
 
 
 // Plan Sheet description of the data portion of the sheet
-var PLAN_RANGE = 'A4:AZ200';
-var PLAN_FIRST_DATA_ROW = 5;
-var PLAN_LAST_DATA_ROW = 120;
+var PLAN_RANGE = 'A4:BZ200';
+var PLAN_FIRST_ROW = 5;
+var PLAN_LAST_ROW = 120;
+var PLAN_FIRST_COL = 0;
+var PLAN_LAST_COL = 78;
 
 // Plan Sheet Action Locations
 var PLAN_GROUP_DROPDOWN_ROW = 1;
 var PLAN_GROUP_DROPDOWN_COL = 1;
+var PLAN_GROUP_DROPDOWN_CELL = 'A1';
 
 var PLAN_MEAL_DROPDOWN_ROW = 2;
 var PLAN_MEAL_DROPDOWN_COL = 1;
@@ -110,16 +123,16 @@ var PLAN_LOG_DROPDOWN_ROW = 3;
 var PLAN_LOG_DROPDOWN_COL = 27;
 
 // Plan Sheet Column Names
-var PLAN_INGREDIENT_COL = 1
-var PLAN_AMZ_COL = 2;
-var PLAN_COST_COL = 3;
-var PLAN_COST_PER_LB_COL = 4;
-
-var PLAN_GROUP_COL = 5;
-var PLAN_CATEGORY_COL = 6;
-var PLAN_BREAKFAST_COL = 7;
-var PLAN_LUNCH_COL = 8;
-var PLAN_DINNER_COL = 9;
+var PLAN_NICKNAME_COL = 1;
+var PLAN_NAME_COL = 2;
+var PLAN_RETAILURL_COL = 3;
+var PLAN_COST_COL = 4;
+var PLAN_COST_PER_LB_COL = 5;
+var PLAN_GROUP_COL = 6;
+var PLAN_CATEGORY_COL = 7;
+var PLAN_BREAKFAST_COL = 8;
+var PLAN_LUNCH_COL = 9;
+var PLAN_DINNER_COL = 10;
 
 var PLAN_SERVINGS_COL = 25;
 var PLAN_GRAMS_COL = 26;
@@ -159,184 +172,184 @@ var RED = '#e06666';       // light red 1
 var mealIngredientData = {
     'Chicken': {
         'Coconut Oil': 1,
-        'Extra Virgin Olive Oil': 2,
+        'Olive Oil': 2,
 
-        'Chicken (boneless skinless breast)': 220,
-        'Eggs (org) (Vital)': 4,
-
-        'Arugula': 30,
-        'Kale (org)': 60,
-
-        'Carrots': 28,
-        'Mushrooms (white)': 100,
-        'Radish': 28,
-        'Salsa': 3,
-        'Serrano Pepper': 2,
-
-        'Avocado (haas)': 1,
-
-        'Blue Cheese': 7,
-        'Feta Cheese': 7,
-        'Mozzarella Cheese': 7,
-        'Parmesan Cheese': 7,
-
-        'Pecans': 7,
-        'Walnuts': 7,
-
-        'Chia Seeds': 1,
-        'Pumpkin Seeds': 14,
-    },
-    'Salmon': {
-        'Coconut Oil': 1,
-        'Extra Virgin Olive Oil': 1,
-
-        'Eggs (org) (Vital)': 4,
+        'Chicken': 220,
+        'Eggs': 4,
 
         'Arugula': 30,
-        'Kale (org)': 60,
+        'Kale': 60,
 
         'Carrots': 28,
-        'Mushrooms (white)': 100,
-        'Radish': 28,
-        'Salsa': 3,
-        'Serrano Pepper': 2,
-
-        'Avocado (haas)': 1,
-
-        'Blue Cheese': 14,
-        'Feta Cheese': 14,
-        'Mozzarella Cheese': 14,
-        'Parmesan Cheese': 14,
-
-        'Pecans': 0,
-        'Walnuts': 0,
-
-        'Chia Seeds': 1,
-        'Pumpkin Seeds': 14,
-    },
-    'Pork Chop': {
-        'Coconut Oil': 1,
-        'Extra Virgin Olive Oil': 1,
-
-        'Eggs (org) (Vital)': 4,
-        'Pork (chop)': 220,
-
-        'Arugula': 30,
-        'Kale (org)': 60,
-
-        'Carrots': 28,
-        'Mushrooms (white)': 100,
-        'Radish': 28,
-        'Salsa': 3,
-        'Serrano Pepper': 2,
-
-        'Avocado (haas)': 1,
-
-        'Feta Cheese': 7,
-        'Mozzarella Cheese': 7,
-        'Parmesan Cheese': 7,
-
-        'Pecans': 0,
-        'Walnuts': 0,
-
-        'Chia Seeds': 1,
-        'Pumpkin Seeds': 14,
-    },
-    'Beef': {
-        'Extra Virgin Olive Oil': 1,
-
-        'Beef (ground)': 200,
-        'Eggs (org) (Vital)': 2,
-
-        'Arugula': 30,
-        'Kale (org)': 60,
-
-        'Carrots': 28,
-        'Mushrooms (white)': 100,
-        'Radish': 28,
-        'Salsa': 3,
-
-        'Avocado (haas)': 1,
-
-        'Blue Cheese': 7,
-        'Feta Cheese': 14,
-        'Mozzarella Cheese': 14,
-        'Parmesan Cheese': 14,
-
-        'Chia Seeds': 1,
-        'Pumpkin Seeds': 14,
-    },
-    'Beef Chuck Roast': {
-        'Coconut Oil': 1,
-        'Extra Virgin Olive Oil': 0.5,
-
-        'Beef (chuck roast)': 150,
-        'Eggs (org) (Vital)': 4,
-
-        'Arugula': 30,
-        'Kale (org)': 60,
-
-        'Carrots': 28,
-        'Mushrooms (white)': 100,
+        'Mushrooms': 100,
         'Radish': 28,
         'Salsa': 3,
         'Serrano': 2,
 
-        'Avocado (haas)': 0.5,
+        'Avocado': 1,
 
-        'Blue Cheese': 14,
-        'Feta Cheese': 14,
-        'Mozzarella Cheese': 28,
-        'Parmesan Cheese': 28,
+        'Blue': 7,
+        'Feta': 7,
+        'Mozzarella': 7,
+        'Parmesan': 7,
 
-        'Chia Seeds': 1,
+        'Pecans': 7,
+        'Walnuts': 7,
+
+        'Chia': 1,
+        'Pumpkin': 14,
+    },
+    'Salmon': {
+        'Coconut Oil': 1,
+        'Olive Oil': 1,
+
+        'Eggs': 4,
+
+        'Arugula': 30,
+        'Kale': 60,
+
+        'Carrots': 28,
+        'Mushrooms': 100,
+        'Radish': 28,
+        'Salsa': 3,
+        'Serrano': 2,
+
+        'Avocado': 1,
+
+        'Blue': 14,
+        'Feta': 14,
+        'Mozzarella': 14,
+        'Parmesan': 14,
+
+        'Pecans': 0,
+        'Walnuts': 0,
+
+        'Chia': 1,
+        'Pumpkin': 14,
+    },
+    'Pork Chop': {
+        'Coconut Oil': 1,
+        'Olive Oil': 1,
+
+        'Eggs': 4,
+        'Pork': 220,
+
+        'Arugula': 30,
+        'Kale': 60,
+
+        'Carrots': 28,
+        'Mushrooms': 100,
+        'Radish': 28,
+        'Salsa': 3,
+        'Serrano': 2,
+
+        'Avocado': 1,
+
+        'Feta': 7,
+        'Mozzarella': 7,
+        'Parmesan': 7,
+
+        'Pecans': 0,
+        'Walnuts': 0,
+
+        'Chia': 1,
+        'Pumpkin': 14,
+    },
+    'Ground Beef': {
+        'Olive Oil': 1,
+
+        'Ground Beef': 200,
+        'Eggs': 2,
+
+        'Arugula': 30,
+        'Kale': 60,
+
+        'Carrots': 28,
+        'Mushrooms': 100,
+        'Radish': 28,
+        'Salsa': 3,
+
+        'Avocado': 1,
+
+        'Blue': 7,
+        'Feta': 14,
+        'Mozzarella': 14,
+        'Parmesan': 14,
+
+        'Chia': 1,
+        'Pumpkin': 14,
+    },
+    'Beef Chuck Roast': {
+        'Coconut Oil': 1,
+        'Olive Oil': 0.5,
+
+        'Beef Chuck Roast': 150,
+        'Eggs': 4,
+
+        'Arugula': 30,
+        'Kale': 60,
+
+        'Carrots': 28,
+        'Mushrooms': 100,
+        'Radish': 28,
+        'Salsa': 3,
+        'Serrano': 2,
+
+        'Avocado': 0.5,
+
+        'Blue': 14,
+        'Feta': 14,
+        'Mozzarella': 28,
+        'Parmesan': 28,
+
+        'Chia': 1,
     },
     'Pork Shoulder': {
         'Coconut Oil': 1,
-        'Extra Virgin Olive Oil': .5,
+        'Olive Oil': .5,
 
-        'Eggs (org) (Vital)': 2,
-        'Pork (shoulder butt': 200,
+        'Eggs': 2,
+        'Pork': 200,
 
         'Arugula': 30,
-        'Kale (org)': 60,
+        'Kale': 60,
 
         'Carrots': 28,
-        'Mushrooms (white)': 100,
+        'Mushrooms': 100,
         'Radish': 28,
         'Salsa': 3,
-        'Serrano Pepper': 2,
+        'Serrano': 2,
 
-        'Avocado (haas)': 1,
+        'Avocado': 1,
 
-        'Mozzarella Cheese': 14,
-        'Parmesan Cheese': 14,
+        'Mozzarella': 14,
+        'Parmesan': 14,
 
-        'Chia Seeds': 1,
+        'Chia': 1,
     },
-    'Top Sirloin': {
+    'Top Sirloin Steak': {
         'Coconut Oil': 1,
-        'Extra Virgin Olive Oil': 1,
+        'Olive Oil': 1,
 
-        'Beef (steak: top sirloin) (BB)': 280,
-        'Eggs (org) (Vital)': 3,
+        'Top Sirloin Steak': 280,
+        'Eggs': 3,
 
         'Arugula': 30,
-        'Kale (org)': 60,
+        'Kale': 60,
 
         'Carrots': 28,
-        'Mushrooms (white)': 100,
+        'Mushrooms': 100,
         'Radish': 28,
         'Salsa': 3,
-        'Serrano Pepper': 2,
+        'Serrano': 2,
 
-        'Avocado (haas)': 1,
+        'Avocado': 1,
 
-        'Mozzarella Cheese': 28,
-        'Parmesan Cheese': 28,
+        'Mozzarella': 28,
+        'Parmesan': 28,
 
-        'Chia Seeds': 1,
-        'Pumpkin Seeds': 14,
+        'Chia': 1,
+        'Pumpkin': 14,
     },
 };
 
@@ -345,11 +358,11 @@ function onOpen() {
     var ss = SpreadsheetApp.getActiveSpreadsheet();
     var myMenu = [
         {
-            name: "Log Daily Macros",
+            name: "Log",
             functionName: "log"
         },
         {
-            name: "Export Food",
+            name: "Export",
             functionName: "exportFood"
         },
     ];
@@ -400,7 +413,7 @@ function onEdit(event) {
     if (column == PLAN_SERVING_COL) {
         threshold(sheet, PLAN_CALORIES_COL, 5);
         threshold(sheet, PLAN_FAT_COL, 3);
-        cap(sheet, PLAN_NET_CARB_COL, 3, .25);
+        cap(sheet, PLAN_NET_CARB_COL, 3, .5);
         threshold(sheet, PLAN_PROTEIN_COL, 2);
         cap(sheet, PLAN_NA_COL, 0, 3);
         cap(sheet, PLAN_CARB_COL, 20, 12.5);
@@ -414,22 +427,22 @@ function exportFood() {
 
     let sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Food');
     let foods = [];
-    let data = sheet.getRange(1, 1, FOOD_LAST_DATA_ROW, FOOD_PROTEIN_COL).getValues();
-    for (let row = FOOD_FIRST_DATA_ROW - 1; row < (FOOD_LAST_DATA_ROW - 1); row++) {
+    let data = sheet.getRange(1, 1, FOOD_LAST_ROW, FOOD_PROTEIN_COL).getValues();
+    for (let row = FOOD_FIRST_DATA_ROW - 1; row < (FOOD_LAST_ROW - 1); row++) {
 
         // Skip any blank rows
         if (data[row][0] === '') {
             continue;
         }
 
-        // Used for debugging only
-        Logger.log(data[row]);
+        // // Used for debugging only
+        // Logger.log(data[row]);
 
         let ingredient = {
-            name: data[row][PLAN_INGREDIENT_COL - 1]
+            name: data[row][FOOD_NAME_COL - 1]
         }
 
-        for (let col = FOOD_STATUS_COL - 1; col <= FOOD_PROTEIN_COL - 1; col++) {
+        for (let col = FOOD_NICKNAME_COL - 1; col <= FOOD_PROTEIN_COL - 1; col++) {
             ingredient[FOOD_COLUMN_NAMES[col]] = data[row][col];
         }
 
@@ -445,13 +458,13 @@ function populateMealIngredients(sheet, dropdownValue) {
 
     // Clear all the values in the servings column
     // Return if no ingredient population is required (eg clear only)
-    sheet.getRange(PLAN_FIRST_DATA_ROW, PLAN_SERVING_COL, PLAN_LAST_DATA_ROW - PLAN_FIRST_DATA_ROW).clear({ contentsOnly: true });
+    sheet.getRange(PLAN_FIRST_ROW, PLAN_SERVING_COL, PLAN_LAST_ROW - PLAN_FIRST_ROW).clear({ contentsOnly: true });
     if (dropdownValue === 'Clear') {
         Logger.log('Clear');
         return;
     }
 
-    let ingredientNames = sheet.getRange(PLAN_FIRST_DATA_ROW, PLAN_INGREDIENT_COL, PLAN_LAST_DATA_ROW).getValues();
+    let ingredientNames = sheet.getRange(PLAN_FIRST_ROW, PLAN_NICKNAME_COL, PLAN_LAST_ROW).getValues();
     let mealIngredients = mealIngredientData[dropdownValue];
     for (let servingName of Object.keys(mealIngredients)) {
         Logger.log('Populating ingredient: [' + servingName + ']');
@@ -468,7 +481,7 @@ function populateMealIngredients(sheet, dropdownValue) {
             }
 
             if (cellValue.startsWith(servingName)) {
-                setValue(sheet, row + PLAN_FIRST_DATA_ROW, PLAN_SERVING_COL, mealIngredients[servingName]);
+                setValue(sheet, row + PLAN_FIRST_ROW, PLAN_SERVING_COL, mealIngredients[servingName]);
                 found = true;
                 break;
             }
@@ -531,6 +544,8 @@ function filterByMeal(sheet, dropdownValue) {
 
 function prepare(sheet) {
     Logger.log('Prepare checkbox');
+    removeFilterFromColumn(sheet, PLAN_GROUP_COL);
+    SpreadsheetApp.getActiveSheet().getRange(PLAN_GROUP_DROPDOWN_CELL).setValue('Venti');
     if (getValue(sheet, PLAN_PREPARE_CHECKBOX_ROW, PLAN_PREPARE_CHECKBOX_COL)) {
         filterEmptyCellsOutOfColumn(sheet, PLAN_SERVING_COL);
     } else {
@@ -545,7 +560,7 @@ function log() {
 
     // Get the data from the spreadsheet and the current date
     let date = Utilities.formatDate(new Date(), "America/Los_Angeles", "MM-dd-yy");
-    let data = sheet.getRange(1, 1, PLAN_LAST_DATA_ROW, PLAN_COST_COL).getValues();
+    let data = sheet.getRange(1, 1, PLAN_LAST_ROW, PLAN_COST_COL).getValues();
 
     logMacros(sheet, data, date);
     logIngredients(sheet, data, date);
@@ -562,25 +577,29 @@ function logMacros(foodSheet, data, date) {
 
 function logIngredients(foodSheet, data, date) {
 
+    Logger.log('Log Ingredients');
+
     // Log the detailed information into the LogDetail sheet
     let sheet = getLogSheet(foodSheet, LOGI_SHEET);
     let lastRow = sheet.getDataRange().getLastRow() + 1;
+    Logger.log('lastRow ' + lastRow);
 
 
-    for (let row = PLAN_FIRST_DATA_ROW - 1; row < (PLAN_LAST_DATA_ROW - 1); row++) {
+    for (let row = PLAN_FIRST_ROW - 1; row < (PLAN_LAST_ROW - 1); row++) {
 
 
         // Skip any food items with zero grams since they weren't part of the meal
-        if (data[row][PLAN_INGREDIENT_COL - 1] === '' || !data[row][PLAN_GRAMS_COL - 1]) {
+        if (data[row][PLAN_NICKNAME_COL - 1] === '' || !data[row][PLAN_GRAMS_COL - 1]) {
             continue;
         }
         Logger.log(data[row]);
 
         // Log (a) date and (b) name of the food
-        let values = [ date, data[row][PLAN_INGREDIENT_COL - 1] ];
+        let values = [ date, data[row][PLAN_NICKNAME_COL - 1] ];
 
-        for (let col = PLAN_GRAMS_COL - 1; col <= PLAN_COST_COL - 1; col++) {
+        for (let col = 0; col <= PLAN_LAST_COL; col++) {
             switch (col) {
+            case (PLAN_NAME_COL - 1):
             case (PLAN_GRAMS_COL - 1):
             case (PLAN_CALORIES_COL - 1):
             case (PLAN_FAT_COL - 1):
@@ -667,8 +686,9 @@ function goal(sheet, col, deviationPercentage) {
 function cap(sheet, col, over, deviationPercentage) {
     let goal = sheet.getRange(1, col).getValue();
     let cell = sheet.getRange(2, col);
-    let value = cell.getValue();
-    let percentage = ((goal - value) / goal) * 100;
+    let actual = cell.getValue();
+
+    let percentage = ((goal - actual) / goal) * 100;
 
     if (percentage < 0 && Math.abs(percentage) < over) {
         cell.setBackground(ORANGE);

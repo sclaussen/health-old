@@ -138,6 +138,7 @@ Some others:
 - [Eric Berg](https://www.youtube.com/c/DrEricBergDC): Quality videos on all aspects of Keto although I prefer Ekberg in general
 - [Bobby Parrish](https://www.youtube.com/user/flavcity): Really solid wrt what to buy/not buy at grocery stores, learned about ceramic from him, better breads to buy, et al
 - [Thomas DeLauer](https://www.youtube.com/channel/UC70SrI3VkT1MXALRtf0pcHg): Popular videos on all aspects of Keto (but maybe my least favorite, although I've found useful data here)
+- [Dr Brad Stanfield](https://www.youtube.com/c/DrBradStanfield/featured): Longevity
 
 
 
@@ -146,28 +147,12 @@ Some others:
 Here's a list of items I found helpful:
 - [Food Scale](https://www.amazon.com/gp/product/B07S6F6LHQ/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1): I don't know how you get started without one
 - [Avocado Slicer](https://www.amazon.com/gp/product/B0088LR592/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1): If you're eating healthy Keto you're consuming a lot of avocado and this slicer works wonders for getting the avocado out
+- [Cutting Board](https://www.amazon.com/gp/product/B0008F6ST4/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1)
 - [Water Bottles](https://www.amazon.com/NALGENE-Tritan-1-Quart-Narrow-BPA-Free/dp/B01C7UX7LY/ref=sr_1_19?dchild=1&keywords=nalgene+1+liter&qid=1613844641&sr=8-19): These are my personal preference, super useful to verify you're getting adequate water per day to prevent  dehydration (and Kidney Stones).
 - [Food Containers](https://www.amazon.com/gp/product/B077G76C6J/ref=ppx_yo_dt_b_asin_title_o09_s00?ie=UTF8&psc=1): I happen to find these extremely useful
 - [Tablespoons](https://www.amazon.com/gp/product/B07HD2TZ2M/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1): I measure a lot of things in tablespoons (oil, et al) so these come in very handy
 - [Garmin Fenix 6 Pro](https://www.amazon.com/Garmin-Multisport-features-Grade-Adjusted-Guidance/dp/B07WL6QHWH/ref=sr_1_3?dchild=1&keywords=garmin+fenix+6+pro&qid=1613064969&sr=8-3): I just got this watch, great for the exercise component of getting healthy
+- [Withings Body+ Scale](https://www.amazon.com/Withings-Nokia-Body-Composition-smartphone/dp/B071XW4C5Q/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=nutrition-best-body-fat-scale-20&linkId=f54ef4ee47c6affeb46c2200c8223896&correlationId=e3c46bd1-0c57-4ec7-b8c6-4cbbd836da51): Provides relatively accureate body fat percentage that I use to help calcualte the grams of protein I need to consumer per day
 - [Fish Oil](https://www.amazon.com/dp/B001LF39S8/ref=twister_B0047VWYSO?_encoding=UTF8&psc=1): What I've started using to supplement Omega-3s
-
-
-
-# Spreadsheet
-
-Create a copy of my spreadsheet.  Note, you may at some point need to
-"re-merge" my spreadsheet, so keep that in mind, as I am pretty
-consistently making improvements.
-
-## Profile Sheet
-
-Update the profile sheet, relevant blanks:
-- Body composition: Necessary data for formulas, keep it updated
-
-
-
-## Foods Sheet
-## Plan
-## Preparation
-## Logging
+- [SlowMag](https://www.amazon.com/SlowMag-Magnesium-Chloride-Calcium-Supplement/dp/B07CJX4M8K/ref=sxts_sxwds-bia-wc-rsf1_0?cv_ct_cx=slow+mag&dchild=1&keywords=slowmag&pd_rd_i=B07CJX4M8K&pd_rd_r=458fbfae-ef08-44fd-bd0f-86d9d433db3e&pd_rd_w=U8kBr&pd_rd_wg=rA9RM&pf_rd_p=5168df84-062d-4bdf-8a6e-2680813bd42f&pf_rd_r=VK1YWSAKY34QDA930PRP&psc=1&qid=1615496082&s=hpc&sr=1-1-7bf78e84-8ef2-4f13-9926-bee5153e81cb): Magnesium supplement
+- [Salad Bowl (OMAD)](https://www.amazon.com/OXO-Grips-3-Quart-Mixing-White/dp/B00004OCMY/ref=sr_1_3?dchild=1&keywords=3+quart+weathertight+bowl&qid=1616878731&sr=8-3)
