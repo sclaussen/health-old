@@ -1,100 +1,7 @@
 // Sheet names
-var FOOD_SHEETS = [ 'Food' ];
 var PLAN_SHEETS = [ 'Plan', 'Plan2', 'Shop' ];
-var LOG_SHEET = "Log";
-var LOGI_SHEET = "LogI";
-
-
-
-// Food Sheet description of the data portion of the sheet
-var FOOD_RANGE = 'A4:AG200';
-var FOOD_FIRST_ROW = 5;
-var FOOD_LAST_ROW = 150;
-
-// Food Sheet Action Locations
-var FOOD_DROPDOWN_ROW = 1;
-var FOOD_DROPDOWN_COLUMN = 1;
-
-// Food Sheet Column Names
-var FOOD_NAME_COLUMN = 1;
-var FOOD_NICKNAME_COLUMN = 2;
-var FOOD_STATUS_COLUMN = 3;
-var FOOD_GROUP_COLUMN = 4;
-var FOOD_CATEGORY_COLUMN = 5;
-var FOOD_STORE_COLUMN = 6;
-var FOOD_FULLNAME_COLUMN = 7;
-var FOOD_BREAKFAST_COLUMN = 8;
-var FOOD_LUNCH_COLUMN = 9;
-var FOOD_DINNER_COLUMN = 10;
-var FOOD_NUTRIENTSURL_COLUMN = 11;
-var FOOD_RETAILURL_COLUMN = 12;
-var FOOD_COST_COLUMN = 13;
-var FOOD_COSTOUNCE_COLUMN = 14;
-var FOOD_COSTLB_COLUMN = 15;
-var FOOD_COSTGRAM_COLUMN = 16;
-var FOOD_SERVINGSIZE_COLUMN = 17;
-var FOOD_NORMALIZED_COLUMN = 18;
-var FOOD_UNIT_COLUMN = 19;
-var FOOD_MIN = 20;
-var FOOD_MAX = 21;
-var FOOD_INC = 22;
-var FOOD_PREPARE = 23;
-var FOOD_CALORIES_COLUMN = 24;
-var FOOD_FAT_COLUMN = 25;
-var FOOD_SATURATED_COLUMN = 26;
-var FOOD_TRANS_COLUMN = 27;
-var FOOD_POLY_COLUMN = 28;
-var FOOD_MONO_COLUMN = 29;
-var FOOD_CHOLESTEROL_COLUMN = 30;
-var FOOD_SODIUM_COLUMN = 31;
-var FOOD_CARBOHYDRATES_COLUMN = 32;
-var FOOD_FIBER_COLUMN = 33;
-var FOOD_SUGAR_COLUMN = 34;
-var FOOD_SUGARPLUS_COLUMN = 35;
-var FOOD_ALCOHOL_COLUMN = 36;
-var FOOD_NETCARBOHYDRATES_COLUMN = 37;
-var FOOD_PROTEIN_COLUMN = 38;
-
-var FOOD_COLUMN_NAMES = [
-    'name',
-    'nickname',
-    'status',
-    'group',
-    'category',
-    'store',
-    'fullname',
-    'breakfast',
-    'lunch',
-    'dinner',
-    'nutrientsurl',
-    'retailurl',
-    'cost',
-    'costounce',
-    'costlb',
-    'costgram',
-    'servingsize',
-    'servingsmultiplier',
-    'unit',
-    'min',
-    'max',
-    'inc',
-    'prepare',
-    'servingcalories',
-    'servingfat',
-    'servingsaturated',
-    'servingtrans',
-    'servingpoly',
-    'servingmono',
-    'servingcholesterol',
-    'servingsodium',
-    'servingcarbohydrates',
-    'servingfiber',
-    'servingsugar',
-    'servingsugarplus',
-    'servingalcohol',
-    'servingnetcarbs',
-    'servingprotein',
-];
+var LOG_SUMMARY_SHEET = "Log";
+var LOG_DETAILS_SHEET = "LogI";
 
 
 
@@ -361,10 +268,10 @@ function onOpen() {
             name: "Log",
             functionName: "log"
         },
-        {
-            name: "Export",
-            functionName: "exportFood"
-        },
+        // {
+        //     name: "Export",
+        //     functionName: "exportFood"
+        // },
     ];
 
     ss.addMenu("77", myMenu);
@@ -422,35 +329,28 @@ function onEdit(event) {
 }
 
 
-function exportFood() {
-    Logger.log('Exporting food');
-
-    let sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Food');
-    let foods = [];
-    let data = sheet.getRange(1, 1, FOOD_LAST_ROW, FOOD_PROTEIN_COLUMN).getValues();
-    for (let row = FOOD_FIRST_DATA_ROW - 1; row < (FOOD_LAST_ROW - 1); row++) {
-
-        // Skip any blank rows
-        if (data[row][0] === '') {
-            continue;
-        }
-
-        // // Used for debugging only
-        // Logger.log(data[row]);
-
-        let ingredient = {
-            name: data[row][FOOD_NAME_COLUMN - 1]
-        }
-
-        for (let col = FOOD_NICKNAME_COLUMN - 1; col <= FOOD_PROTEIN_COLUMN - 1; col++) {
-            ingredient[FOOD_COLUMN_NAMES[col]] = data[row][col];
-        }
-
-        foods.push(ingredient);
-    }
-
-    DriveApp.createFile('ingredients.json', JSON.stringify(foods, null, 4));
-}
+// function exportFood() {
+//     Logger.log('Exporting food');
+//     let sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Food');
+//     let foods = [];
+//     let data = sheet.getRange(1, 1, FOOD_LAST_ROW, FOOD_PROTEIN_COLUMN).getValues();
+//     for (let row = FOOD_FIRST_DATA_ROW - 1; row < (FOOD_LAST_ROW - 1); row++) {
+//         // Skip any blank rows
+//         if (data[row][0] === '') {
+//             continue;
+//         }
+//         // // Used for debugging only
+//         // Logger.log(data[row]);
+//         let ingredient = {
+//             name: data[row][FOOD_NAME_COLUMN - 1]
+//         }
+//         for (let col = FOOD_NICKNAME_COLUMN - 1; col <= FOOD_PROTEIN_COLUMN - 1; col++) {
+//             ingredient[FOOD_COLUMN_NAMES[col]] = data[row][col];
+//         }
+//         foods.push(ingredient);
+//     }
+//     DriveApp.createFile('ingredients.json', JSON.stringify(foods, null, 4));
+// }
 
 
 function populateMealIngredients(sheet, dropdownValue) {
@@ -568,7 +468,7 @@ function log() {
 
 
 function logMacros(foodSheet, data, date) {
-    let sheet = getLogSheet(foodSheet, LOG_SHEET);
+    let sheet = getLogSheet(foodSheet, LOG_SUMMARY_SHEET);
     let values = [ [ date, data[1][PLAN_CALORIES_COLUMN - 1], data[1][PLAN_FAT_COLUMN - 1], data[1][PLAN_SATURATED_FAT_COLUMN - 1], data[1][PLAN_TRANS_FAT_COLUMN - 1], data[1][PLAN_POLY_FAT_COLUMN - 1], data[1][PLAN_MONO_FAT_COLUMN - 1], data[1][PLAN_CHOL_COLUMN - 1], data[1][PLAN_NA_COLUMN - 1], data[1][PLAN_CARB_COLUMN - 1], data[1][PLAN_FIBER_COLUMN - 1], data[1][PLAN_SUGAR_COLUMN - 1], data[1][PLAN_SUGAR_PLUS_COLUMN - 1], data[1][PLAN_SUGAR_ALCOHOL_COLUMN - 1], data[1][PLAN_NET_CARB_COLUMN - 1], data[1][PLAN_PROTEIN_COLUMN - 1], data[1][PLAN_COST_COLUMN - 1] ] ];
     Logger.log(values[0]);
     setRowValues(sheet, sheet.getDataRange().getLastRow() + 1, 1, values);
@@ -580,7 +480,7 @@ function logIngredients(foodSheet, data, date) {
     Logger.log('Log Ingredients');
 
     // Log the detailed information into the LogDetail sheet
-    let sheet = getLogSheet(foodSheet, LOGI_SHEET);
+    let sheet = getLogSheet(foodSheet, LOG_DETAILS_SHEET);
     let lastRow = sheet.getDataRange().getLastRow() + 1;
     Logger.log('lastRow ' + lastRow);
 
