@@ -1,72 +1,67 @@
-// Sheet names
-var PLAN_SHEETS = [ 'Plan', 'Plan2', 'Shop' ];
-var LOG_SUMMARY_SHEET = "Log";
-var LOG_DETAILS_SHEET = "LogI";
+var plan = {
+    plan_sheets: [ 'Plan', 'Plan2', 'Shop', '100g' ],
+    filter_sheets: [ 'Plan', 'Plan2', 'Shop', '100g' ],
+    prepare_sheets: [ 'Plan', 'Plan2' ],
+    menu_sheets: [ 'Plan', 'Plan2' ],
+    range: 'A4:BR200',
+    actions: {
+        filter: 'A1',
+        prepare: 'B2',
+        menu: 'A3',
+        date: 'AA1'
+    },
+    goal: {
+        calories: 'AG1',
+        fat: 'AH1',
+        fiber: 'AP1',
+        netcarbs: 'AT1',
+        protein: 'AU1'
+    },
+    actual: {
+        weight: 'AF1',
+        body_fat: 'AF2',
+        protein_k: 'AF3',
+        calories: 'AG2',
+        fat: 'AH2',
+        fiber: 'AP2',
+        netcarbs: 'AT2',
+        protein: 'AU2'
+    },
+    column: {
+        ingredient: 'A',
+        product: 'B',
+        category: 'H',
+        subcategory: 'I',
+        filter: 'V',
+        grams: 'Z',
+        serving: 'AA',
+        calories: 'AG',
+        manganese: 'BR',
+    }
+};
+
+var log = {
+    summary: 'LogS',
+    details: 'LogD'
+};
 
 
-
-// Plan Sheet description of the data portion of the sheet
-var PLAN_RANGE = 'A4:BZ200';
-var PLAN_FIRST_ROW = 5;
-var PLAN_LAST_ROW = 120;
-var PLAN_FIRST_COLUMN = 0;
-var PLAN_LAST_COLUMN = 78;
-
-// Plan Sheet Action Locations
-var PLAN_GROUP_DROPDOWN_ROW = 1;
-var PLAN_GROUP_DROPDOWN_COLUMN = 1;
-var PLAN_GROUP_DROPDOWN_CELL = 'A1';
-
-var PLAN_MEAL_DROPDOWN_ROW = 2;
-var PLAN_MEAL_DROPDOWN_COLUMN = 1;
-
-var PLAN_POPULATE_INGREDIENTS_DROPDOWN_ROW = 1;
-var PLAN_POPULATE_INGREDIENTS_DROPDOWN_COLUMN = 27;
-
-var PLAN_PREPARE_CHECKBOX_ROW = 2;
-var PLAN_PREPARE_CHECKBOX_COLUMN = 28;
-
-var PLAN_LOG_DROPDOWN_ROW = 3;
-var PLAN_LOG_DROPDOWN_COLUMN = 27;
-
-// Plan Sheet Column Names
-var PLAN_NICKNAME_COLUMN = 1;
-var PLAN_NAME_COLUMN = 2;
-var PLAN_RETAILURL_COLUMN = 3;
-var PLAN_COST_COLUMN = 4;
-var PLAN_COST_PER_LB_COLUMN = 5;
-var PLAN_GROUP_COLUMN = 6;
-var PLAN_CATEGORY_COLUMN = 7;
-var PLAN_BREAKFAST_COLUMN = 8;
-var PLAN_LUNCH_COLUMN = 9;
-var PLAN_DINNER_COLUMN = 10;
-
-var PLAN_SERVINGS_COLUMN = 25;
-var PLAN_GRAMS_COLUMN = 26;
-var PLAN_SERVING_COLUMN = 27;
-var PLAN_UNIT_COLUMN = 28;
-var PLAN_FAT_REQUIRED_COLUMN = 29;
-var PLAN_FIBER_REQUIRED_COLUMN = 30;
-var PLAN_CARB_REQUIRED_COLUMN = 31;
-var PLAN_PROTEIN_REQUIRED_COLUMN = 32;
-var PLAN_CALORIES_COLUMN = 33;
-var PLAN_FAT_COLUMN = 34;
-var PLAN_SATURATED_FAT_COLUMN = 35;
-var PLAN_TRANS_FAT_COLUMN = 36;
-var PLAN_POLY_FAT_COLUMN = 37;
-var PLAN_MONO_FAT_COLUMN = 38;
-var PLAN_CHOL_COLUMN = 39;
-var PLAN_NA_COLUMN = 40;
-var PLAN_CARB_COLUMN = 41;
-var PLAN_FIBER_COLUMN = 42;
-var PLAN_SUGAR_COLUMN = 43;
-var PLAN_SUGAR_PLUS_COLUMN = 44;
-var PLAN_SUGAR_ALCOHOL_COLUMN = 45;
-var PLAN_NET_CARB_COLUMN = 46;
-var PLAN_PROTEIN_COLUMN = 47;
-var PLAN_COST_COLUMN = 48;
-
-
+// Plan Query (in A4)
+// - Plan Sheet A Column: Food Sheet "Ingredient" (Column A)
+// - Plan Sheet B Column: Food Sheet "Product" (Column H)
+// - Plan Sheet C Column: Food Sheet "Sale" (Column I)
+// - Plan Sheet D Column: Food Sheet "Cost" (Column J)
+// - Plan Sheet E Column: Food Sheet "Purchase" (Column G)
+// - Plan Sheet F Column: Food Sheet "Nutrition" (Column N)
+// - Plan Sheet G Column: Food Sheet "Filter" (Column D)
+// - Plan Sheet H Column: Food Sheet "Category" (Column E)
+// - Plan Sheet I Column: Food Sheet "SubCategory" (Column F)
+// - Plan Sheet J Column: Food Sheet "Norm K" (Column O)
+// =query(FoodWithHeader,"select A, H, I, J, G, N, D, E, F, O where C='1-Active'", 1)
+//
+// Second Query (in AB4):
+// - Plan Sheet AB Column: Food Sheet "Unit" (Column P)
+// =query(FoodWithHeader, "select P where C='1-Active'", 1)
 
 // Colors used for threshold highlighting
 var GREEN = '#b6d7a8';     // light green 2
@@ -75,454 +70,269 @@ var ORANGE = '#f4cccc';    // light red 3
 var RED = '#e06666';       // light red 1
 
 
-
-var mealIngredientData = {
-    'Chicken': {
-        'Coconut Oil': 1,
-        'Olive Oil': 2,
-
-        'Chicken': 220,
-        'Eggs': 4,
-
-        'Arugula': 30,
-        'Kale': 60,
-
-        'Carrots': 28,
-        'Mushrooms': 100,
-        'Radish': 28,
-        'Salsa': 3,
-        'Serrano': 2,
-
-        'Avocado': 1,
-
-        'Blue': 7,
-        'Feta': 7,
-        'Mozzarella': 7,
-        'Parmesan': 7,
-
-        'Pecans': 7,
-        'Walnuts': 7,
-
-        'Chia': 1,
-        'Pumpkin': 14,
-    },
-    'Salmon': {
-        'Coconut Oil': 1,
-        'Olive Oil': 1,
-
-        'Eggs': 4,
-
-        'Arugula': 30,
-        'Kale': 60,
-
-        'Carrots': 28,
-        'Mushrooms': 100,
-        'Radish': 28,
-        'Salsa': 3,
-        'Serrano': 2,
-
-        'Avocado': 1,
-
-        'Blue': 14,
-        'Feta': 14,
-        'Mozzarella': 14,
-        'Parmesan': 14,
-
-        'Pecans': 0,
-        'Walnuts': 0,
-
-        'Chia': 1,
-        'Pumpkin': 14,
-    },
-    'Pork Chop': {
-        'Coconut Oil': 1,
-        'Olive Oil': 1,
-
-        'Eggs': 4,
-        'Pork': 220,
-
-        'Arugula': 30,
-        'Kale': 60,
-
-        'Carrots': 28,
-        'Mushrooms': 100,
-        'Radish': 28,
-        'Salsa': 3,
-        'Serrano': 2,
-
-        'Avocado': 1,
-
-        'Feta': 7,
-        'Mozzarella': 7,
-        'Parmesan': 7,
-
-        'Pecans': 0,
-        'Walnuts': 0,
-
-        'Chia': 1,
-        'Pumpkin': 14,
-    },
-    'Ground Beef': {
-        'Olive Oil': 1,
-
-        'Ground Beef': 200,
-        'Eggs': 2,
-
-        'Arugula': 30,
-        'Kale': 60,
-
-        'Carrots': 28,
-        'Mushrooms': 100,
-        'Radish': 28,
-        'Salsa': 3,
-
-        'Avocado': 1,
-
-        'Blue': 7,
-        'Feta': 14,
-        'Mozzarella': 14,
-        'Parmesan': 14,
-
-        'Chia': 1,
-        'Pumpkin': 14,
-    },
-    'Beef Chuck Roast': {
-        'Coconut Oil': 1,
-        'Olive Oil': 0.5,
-
-        'Beef Chuck Roast': 150,
-        'Eggs': 4,
-
-        'Arugula': 30,
-        'Kale': 60,
-
-        'Carrots': 28,
-        'Mushrooms': 100,
-        'Radish': 28,
-        'Salsa': 3,
-        'Serrano': 2,
-
-        'Avocado': 0.5,
-
-        'Blue': 14,
-        'Feta': 14,
-        'Mozzarella': 28,
-        'Parmesan': 28,
-
-        'Chia': 1,
-    },
-    'Pork Shoulder': {
-        'Coconut Oil': 1,
-        'Olive Oil': .5,
-
-        'Eggs': 2,
-        'Pork': 200,
-
-        'Arugula': 30,
-        'Kale': 60,
-
-        'Carrots': 28,
-        'Mushrooms': 100,
-        'Radish': 28,
-        'Salsa': 3,
-        'Serrano': 2,
-
-        'Avocado': 1,
-
-        'Mozzarella': 14,
-        'Parmesan': 14,
-
-        'Chia': 1,
-    },
-    'Top Sirloin Steak': {
-        'Coconut Oil': 1,
-        'Olive Oil': 1,
-
-        'Top Sirloin Steak': 280,
-        'Eggs': 3,
-
-        'Arugula': 30,
-        'Kale': 60,
-
-        'Carrots': 28,
-        'Mushrooms': 100,
-        'Radish': 28,
-        'Salsa': 3,
-        'Serrano': 2,
-
-        'Avocado': 1,
-
-        'Mozzarella': 28,
-        'Parmesan': 28,
-
-        'Chia': 1,
-        'Pumpkin': 14,
-    },
-};
-
-
-function onOpen() {
-    var ss = SpreadsheetApp.getActiveSpreadsheet();
-    var myMenu = [
-        {
-            name: "Log",
-            functionName: "log"
-        },
-        // {
-        //     name: "Export",
-        //     functionName: "exportFood"
-        // },
-    ];
-
-    ss.addMenu("77", myMenu);
-}
-
-
 function onEdit(event) {
 
     // Determine if the event is on a sheet that we have callbacks registered
     var sheet = SpreadsheetApp.getActiveSheet();
     var sheetName = sheet.getName();
-    if (PLAN_SHEETS.includes(sheetName) === false) {
+    if (!plan.filter_sheets.includes(sheetName)) {
         return;
     }
 
 
+    // Get the row/column of the updated cell
     var row = event.range.getRow();
     var column = event.range.getColumn();
-    Logger.log(event, sheetName, row, column);
 
 
-    if (row == PLAN_GROUP_DROPDOWN_ROW && column == PLAN_GROUP_DROPDOWN_COLUMN) {
-        createFilter(sheet);
-        filterByGroup(sheet, event.value);
+    // Change the filter (small, medium, or large)
+    let filterActionCell = getCellInfo(plan.actions.filter);
+    if (plan.filter_sheets.includes(sheetName) && row === filterActionCell.row && column === filterActionCell.column) {
+        Logger.log('Filter action: ' + event.value);
+        createSpreadsheetWideFilter(sheet);
+        updateDate(sheet);
+        filterAction(sheet, event.value);
         return;
     }
 
-    if (row == PLAN_MEAL_DROPDOWN_ROW && column == PLAN_MEAL_DROPDOWN_COLUMN) {
-        createFilter(sheet);
-        filterByMeal(sheet, event.value);
+
+    // Filter to the ingredients that are part of the meal
+    let prepareActionCell = getCellInfo(plan.actions.prepare);
+    if (plan.prepare_sheets.includes(sheetName) && row === prepareActionCell.row && column === prepareActionCell.column) {
+        Logger.log('Prepare action');
+        createSpreadsheetWideFilter(sheet);
+        updateDate(sheet);
+        prepareAction(sheet);
         return;
     }
 
-    if (row == PLAN_PREPARE_CHECKBOX_ROW && column == PLAN_PREPARE_CHECKBOX_COLUMN) {
-        createFilter(sheet);
-        prepare(sheet);
+
+    // Execute one of the items in the actions menu
+    let menuActionCell = getCellInfo(plan.actions.menu);
+    if (plan.menu_sheets.includes(sheetName) && row === menuActionCell.row && column === menuActionCell.column) {
+        Logger.log('Menu action: ' + event.value);
+        createSpreadsheetWideFilter(sheet);
+        menuAction(sheet, event.value);
         return;
     }
 
-    if (row == PLAN_POPULATE_INGREDIENTS_DROPDOWN_ROW && column == PLAN_POPULATE_INGREDIENTS_DROPDOWN_COLUMN) {
-        populateMealIngredients(sheet, event.value);
-        return;
-    }
 
-    // Color code macronutrient values based on thresholds
-    if (column == PLAN_SERVING_COLUMN) {
-        optimal(sheet, { row: 2, column: PLAN_CALORIES_COLUMN }, { row: 1, column: PLAN_CALORIES_COLUMN }, 150);
-        optimal(sheet, { row: 2, column: PLAN_FAT_COLUMN }, { row: 1, column: PLAN_FAT_COLUMN }, 2);
-        maximum(sheet, { row: 2, column: PLAN_NET_CARB_COLUMN }, { row: 1, column: PLAN_NET_CARB_COLUMN }, 0);
-        optimal(sheet, { row: 2, column: PLAN_PROTEIN_COLUMN }, { row: 1, column: PLAN_PROTEIN_COLUMN }, 2);
-        maximum(sheet, { row: 2, column: PLAN_NA_COLUMN }, { row: 1, column: PLAN_NA_COLUMN }, 0);
-        maximum(sheet, { row: 2, column: PLAN_CARB_COLUMN }, { row: 1, column: PLAN_CARB_COLUMN }, 0);
-        minimum(sheet, { row: 2, column: PLAN_FIBER_COLUMN }, { row: 1, column: PLAN_FIBER_COLUMN }, 0);
+    // Color code aggregate nutrient actuals based on desired goals
+    let servingColumn = getCellInfo(plan.column.serving).column;
+    if (plan.prepare_sheets.includes(sheetName) && column === servingColumn) {
+        updateDate(sheet);
+        optimal(sheet, getCellInfo(plan.goal.calories), getCellInfo(plan.actual.calories), 150);
+        optimal(sheet, getCellInfo(plan.goal.fat), getCellInfo(plan.actual.fat), 2.5);
+        minimum(sheet, getCellInfo(plan.goal.fiber), getCellInfo(plan.actual.fiber), 0);
+        maximum(sheet, getCellInfo(plan.goal.netcarbs), getCellInfo(plan.actual.netcarbs), 0);
+        optimal(sheet, getCellInfo(plan.goal.protein), getCellInfo(plan.actual.protein), 2.5);
+        return;
     }
 }
 
 
-// function exportFood() {
-//     Logger.log('Exporting food');
-//     let sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Food');
-//     let foods = [];
-//     let data = sheet.getRange(1, 1, FOOD_LAST_ROW, FOOD_PROTEIN_COLUMN).getValues();
-//     for (let row = FOOD_FIRST_DATA_ROW - 1; row < (FOOD_LAST_ROW - 1); row++) {
-//         // Skip any blank rows
-//         if (data[row][0] === '') {
-//             continue;
-//         }
-//         // // Used for debugging only
-//         // Logger.log(data[row]);
-//         let ingredient = {
-//             name: data[row][FOOD_NAME_COLUMN - 1]
-//         }
-//         for (let col = FOOD_NICKNAME_COLUMN - 1; col <= FOOD_PROTEIN_COLUMN - 1; col++) {
-//             ingredient[FOOD_COLUMN_NAMES[col]] = data[row][col];
-//         }
-//         foods.push(ingredient);
-//     }
-//     DriveApp.createFile('ingredients.json', JSON.stringify(foods, null, 4));
-// }
-
-
-function populateMealIngredients(sheet, dropdownValue) {
-    Logger.log('Populate Ingredients for the Meal: ' + dropdownValue);
-
-    // Clear all the values in the servings column
-    // Return if no ingredient population is required (eg clear only)
-    sheet.getRange(PLAN_FIRST_ROW, PLAN_SERVING_COLUMN, PLAN_LAST_ROW - PLAN_FIRST_ROW).clear({ contentsOnly: true });
-    if (dropdownValue === 'Clear') {
-        Logger.log('Clear');
-        return;
-    }
-
-    let ingredientNames = sheet.getRange(PLAN_FIRST_ROW, PLAN_NICKNAME_COLUMN, PLAN_LAST_ROW).getValues();
-    let mealIngredients = mealIngredientData[dropdownValue];
-    for (let servingName of Object.keys(mealIngredients)) {
-        Logger.log('Populating ingredient: [' + servingName + ']');
-
-        found = false;
-        for (let row = 0; row < ingredientNames.length; row++) {
-
-            // Get the value of the cell which will be the name of the
-            // food item, although some of these can be blank because
-            // we have fetched PLAN_MAX_ITEMS from the sheet
-            let cellValue = ingredientNames[row][0];
-            if (!cellValue) {
-                continue;
-            }
-
-            if (cellValue.startsWith(servingName)) {
-                setValue(sheet, row + PLAN_FIRST_ROW, PLAN_SERVING_COLUMN, mealIngredients[servingName]);
-                found = true;
-                break;
-            }
-        }
-
-        if (!found) {
-            Logger.log('  - ERROR: The ingredient was not found');
-        }
-    }
+// This function is called when any of the actions are invoked (with
+// the exception of the menu/log action).  It determines the current
+// date and sticks it into the date cell.  That date is then used when
+// the summary and detailed logging occurs.  The idea is that if you
+// log the day after your meal, you can update this value, and that's
+// the value the summary and detailed logging will use instead.
+function updateDate(sheet) {
+    let date = Utilities.formatDate(new Date(), "America/Los_Angeles", "MM-dd-yy");
+    let dateCell = getCellInfo(plan.actions.date);
+    setCellValue(sheet, dateCell, date);
 }
 
 
-function filterByGroup(sheet, dropdownValue) {
+// The filter action changes which ingredients are listed, either the
+// Small set, the Small+Medium set, or the Small+Medium+Large set.  In
+// addition, any item that has a serving size > 0 is also displayed
+// (it's automtically placed into the Small set).  This action also
+// results in removing prepare's filter on the serving column if it
+// was in place prior to invocation.
+function filterAction(sheet, filter) {
+    // The very first time the sheet is loaded into the browser
+    // initialize the last filter
+    if (!getProperty('lastFilter')) {
+        Logger.log('Initializing lastFilter to Small');
+        setProperty('lastFilter', 'Small');
+    }
 
-    // First, remove the filter, ...
-    removeFilterFromColumn(sheet, PLAN_GROUP_COLUMN);
+    applyFilter(sheet, filter);
+}
 
-    switch (dropdownValue) {
+
+// This little routine is separated out for reuse purposes, it is
+// called by the normal filter action, but also invoked during prepare
+// deselection and after the logging action has completed.
+function applyFilter(sheet, filter) {
+    // If "prepare" was selected deselect it and remove its filter on
+    // the serving column
+    let prepareActionCell = getCellInfo(plan.actions.prepare);
+    let prepareActionSelected = getCellValue(sheet, prepareActionCell);
+    if (prepareActionSelected) {
+        Logger.log('Removing prepare\'s serving column filter');
+        setCellValue(sheet, prepareActionCell, false);
+        removeFilterFromColumn(sheet, getColumn(plan.column.serving));
+    }
+
+    // Remove the prior filter on the filter column
+    Logger.log('Removing the prior filter column\'s filter');
+    let filterColumn = getColumn(plan.column.filter);
+    removeFilterFromColumn(sheet, filterColumn);
+
+    // Apply the new filter
+    Logger.log('Applying new filter: ' + filter + ' (lastFilter: ' + getProperty('lastFilter') + ')');
+    setProperty('lastFilter', filter);
+    let filterActionCell = getCellInfo(plan.actions.filter);
+    setCellValue(sheet, filterActionCell, filter);
+
+    switch (filter) {
     case 'Small':
-        Logger.log('Group Filter -> Small');
-        filterValueOutOfColumn(sheet, PLAN_GROUP_COLUMN, [ '2-Grande', '3-Venti' ]);
+        filterValueOutOfColumn(sheet, filterColumn, [ 'Medium', 'Large' ]);
         break;
-    case 'Grande':
-        Logger.log('Group Filter -> Grande');
-        filterValueOutOfColumn(sheet, PLAN_GROUP_COLUMN, [ '3-Venti' ]);
+    case 'Medium':
+        filterValueOutOfColumn(sheet, filterColumn, [ 'Large' ]);
         break;
-    case 'Venti':
-        Logger.log('Group Filter -> Venti');
+    case 'Large':
         break;
     }
 }
 
 
-function filterByMeal(sheet, dropdownValue) {
-    Logger.log('Meal filter: ' + dropdownValue);
+// The prepare action is used to filter the ingredients down to just
+// the list that have serving sizes > 0.  This is useful when it's
+// time to prepare the meal as this list becomes the bill of
+// materials!
+function prepareAction(sheet) {
 
-    removeFilterFromColumn(sheet, PLAN_BREAKFAST_COLUMN);
-    removeFilterFromColumn(sheet, PLAN_LUNCH_COLUMN);
-    removeFilterFromColumn(sheet, PLAN_DINNER_COLUMN);
+    let prepareActionCell = getCellInfo(plan.actions.prepare);
+    let prepareActionSelected = getCellValue(sheet, prepareActionCell);
+    Logger.log('prepareActionSelected: ' + prepareActionSelected);
+    if (prepareActionSelected) {
+        // Steps:
+        // 1. Remove the filter column's filter resulting in the full set of ingredients being listed
+        // 2. Set the filter action cell's value to "Filter..." to indicate the prepare view has been selected
+        // 3. Filter the serving column to list ingredients that have some number of servings specified > 0
+        Logger.log('Prepare selected');
 
-    switch (dropdownValue) {
-    case 'All Meals':
-        Logger.log('Meal Filter -> All Meals');
-        break;
-    case 'Breakfast':
-        Logger.log('Meal Filter -> Breakfast');
-        filterEmptyCellsOutOfColumn(sheet, PLAN_BREAKFAST_COLUMN);
-        break;
-    case 'Lunch':
-        Logger.log('Meal Filter -> Lunch');
-        filterEmptyCellsOutOfColumn(sheet, PLAN_LUNCH_COLUMN);
-        break;
-    case 'Dinner':
-        Logger.log('Meal Filter -> Dinner');
-        filterEmptyCellsOutOfColumn(sheet, PLAN_DINNER_COLUMN);
-        break;
-    }
-}
+        Logger.log('Removing the filter column\'s filter');
+        let filterColumn = getColumn(plan.column.filter);
+        removeFilterFromColumn(sheet, filterColumn);
+        let filterActionCell = getCellInfo(plan.actions.filter);
+        setCellValue(sheet, filterActionCell, 'Filter...');
 
-
-function prepare(sheet) {
-    Logger.log('Prepare checkbox');
-    removeFilterFromColumn(sheet, PLAN_GROUP_COLUMN);
-    SpreadsheetApp.getActiveSheet().getRange(PLAN_GROUP_DROPDOWN_CELL).setValue('Venti');
-    if (getValue(sheet, PLAN_PREPARE_CHECKBOX_ROW, PLAN_PREPARE_CHECKBOX_COLUMN)) {
-        filterEmptyCellsOutOfColumn(sheet, PLAN_SERVING_COLUMN);
+        Logger.log('Applying prepare\'s filter to the serving column');
+        let servingColumn = getCellInfo(plan.column.serving).column;
+        filterEmptyCellsOutOfColumn(sheet, servingColumn);
     } else {
-        removeFilterFromColumn(sheet, PLAN_SERVING_COLUMN);
+        Logger.log('Prepare deselected');
+        Logger.log('Removing prepare\'s serving column filter');
+        removeFilterFromColumn(sheet, getColumn(plan.column.serving));
+        applyFilter(sheet, getProperty('lastFilter'));
     }
 }
 
 
-function log() {
-    // Get the planning sheet
-    let sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Plan');
+function menuAction(sheet, menuItem) {
 
     // Get the data from the spreadsheet and the current date
-    let date = Utilities.formatDate(new Date(), "America/Los_Angeles", "MM-dd-yy");
-    let data = sheet.getRange(1, 1, PLAN_LAST_ROW, PLAN_COST_COLUMN).getValues();
+    let dateCell = getCellInfo(plan.actions.date);
+    let range = getRangeInfo(plan.range);
+    let date = getCellValue(sheet, dateCell);
+    let data = sheet.getRange(1, 1, range.bottomRight.row, range.bottomRight.column).getValues();
 
-    logMacros(sheet, data, date);
-    logIngredients(sheet, data, date);
+    logSummary(sheet, data, date);
+    logDetails(sheet, data, date);
+
+    let menuActionCell = getCellInfo(plan.actions.menu);
+    setCellValue(sheet, menuActionCell, 'Menu...');
+
+    applyFilter(sheet, getProperty('lastFilter'));
 }
 
 
-function logMacros(foodSheet, data, date) {
-    let sheet = getLogSheet(foodSheet, LOG_SUMMARY_SHEET);
-    let values = [ [ date, data[1][PLAN_CALORIES_COLUMN - 1], data[1][PLAN_FAT_COLUMN - 1], data[1][PLAN_SATURATED_FAT_COLUMN - 1], data[1][PLAN_TRANS_FAT_COLUMN - 1], data[1][PLAN_POLY_FAT_COLUMN - 1], data[1][PLAN_MONO_FAT_COLUMN - 1], data[1][PLAN_CHOL_COLUMN - 1], data[1][PLAN_NA_COLUMN - 1], data[1][PLAN_CARB_COLUMN - 1], data[1][PLAN_FIBER_COLUMN - 1], data[1][PLAN_SUGAR_COLUMN - 1], data[1][PLAN_SUGAR_PLUS_COLUMN - 1], data[1][PLAN_SUGAR_ALCOHOL_COLUMN - 1], data[1][PLAN_NET_CARB_COLUMN - 1], data[1][PLAN_PROTEIN_COLUMN - 1], data[1][PLAN_COST_COLUMN - 1] ] ];
-    Logger.log(values[0]);
-    setRowValues(sheet, sheet.getDataRange().getLastRow() + 1, 1, values);
+function logSummary(sheet, data, date) {
+    Logger.log('Logging summary');
+    let logSummarySheet = getSheet(log.summary);
+
+    let values = [ date ];
+
+    let weightCell = getCellInfo(plan.actual.weight);
+    values.push(data[weightCell.row - 1][weightCell.column - 1]);
+
+    let bodyFatCell = getCellInfo(plan.actual.body_fat);
+    values.push(data[bodyFatCell.row - 1][bodyFatCell.column - 1]);
+
+    let proteinKCell = getCellInfo(plan.actual.protein_k);
+    values.push(data[proteinKCell.row - 1][proteinKCell.column - 1]);
+
+    let calorieColumn  = getColumn(plan.column.calories);
+    for (let column = calorieColumn; column <= getColumn(plan.column.manganese); column++) {
+        values.push(data[1][column - 1]);
+        if (column === calorieColumn ||
+            column === (calorieColumn + 1) ||
+            column === (calorieColumn + 1) ||
+            column === (calorieColumn + 9) ||
+            column === (calorieColumn + 13) ||
+            column === (calorieColumn + 14)) {
+            values.push(data[0][column - 1]);
+        }
+    }
+    Logger.log('Logging ' + values);
+    setRowValues(logSummarySheet, logSummarySheet.getDataRange().getLastRow() + 1, 1, [ values ]);
 }
 
 
-function logIngredients(foodSheet, data, date) {
-
-    Logger.log('Log Ingredients');
+function logDetails(sheet, data, date) {
+    Logger.log('Logging details');
 
     // Log the detailed information into the LogDetail sheet
-    let sheet = getLogSheet(foodSheet, LOG_DETAILS_SHEET);
-    let lastRow = sheet.getDataRange().getLastRow() + 1;
-    Logger.log('lastRow ' + lastRow);
+    let logDetailsSheet = getSheet(log.details);
+    let lastRow = logDetailsSheet.getDataRange().getLastRow() + 1;
+    Logger.log('Logging details in the ' + log.details + ' sheet beginning on row: ' + lastRow);
 
 
-    for (let row = PLAN_FIRST_ROW - 1; row < (PLAN_LAST_ROW - 1); row++) {
-
+    let servingColumn = getColumn(plan.column.serving);
+    let ingredientColumn = getColumn(plan.column.ingredient);
+    let productColumn = getColumn(plan.column.product);
+    let categoryColumn = getColumn(plan.column.category);
+    let subcategoryColumn = getColumn(plan.column.subcategory);
+    let gramsColumn = getColumn(plan.column.grams);
+    let caloriesColumn = getColumn(plan.column.calories);
+    let range = getRangeInfo(plan.range);
+    for (let row = range.topLeft.row; row < (range.bottomRight.row - 1); row++) {
 
         // Skip any food items with zero grams since they weren't part of the meal
-        if (data[row][PLAN_NICKNAME_COLUMN - 1] === '' || !data[row][PLAN_GRAMS_COLUMN - 1]) {
+        if (data[row][ingredientColumn - 1] === '' || !data[row][servingColumn - 1]) {
             continue;
         }
         Logger.log(data[row]);
 
         // Log (a) date and (b) name of the food
-        let values = [ date, data[row][PLAN_NICKNAME_COLUMN - 1] ];
+        let values = [ date, data[row][ingredientColumn - 1] ];
 
-        for (let col = 0; col <= PLAN_LAST_COLUMN; col++) {
+        for (let col = 0; col <= range.bottomRight.column; col++) {
+
+            // Log all the required fields prior to the nutrition fields
             switch (col) {
-            case (PLAN_NAME_COLUMN - 1):
-            case (PLAN_GRAMS_COLUMN - 1):
-            case (PLAN_CALORIES_COLUMN - 1):
-            case (PLAN_FAT_COLUMN - 1):
-            case (PLAN_SATURATED_FAT_COLUMN - 1):
-            case (PLAN_TRANS_FAT_COLUMN - 1):
-            case (PLAN_POLY_FAT_COLUMN - 1):
-            case (PLAN_MONO_FAT_COLUMN - 1):
-            case (PLAN_CHOL_COLUMN - 1):
-            case (PLAN_NA_COLUMN - 1):
-            case (PLAN_CARB_COLUMN - 1):
-            case (PLAN_FIBER_COLUMN - 1):
-            case (PLAN_SUGAR_COLUMN - 1):
-            case (PLAN_SUGAR_PLUS_COLUMN - 1):
-            case (PLAN_SUGAR_ALCOHOL_COLUMN - 1):
-            case (PLAN_NET_CARB_COLUMN - 1):
-            case (PLAN_PROTEIN_COLUMN - 1):
-            case (PLAN_COST_COLUMN - 1):
+            case (productColumn - 1):
+            case (categoryColumn - 1):
+            case (subcategoryColumn - 1):
+            case (gramsColumn - 1):
                 values.push(data[row][col]);
+                continue;
+            }
+
+            // Log all the nutrition fields (plus cost)
+            if (col >= (caloriesColumn - 1)) {
+                values.push(data[row][col]);
+                continue;
             }
         }
 
         Logger.log(values);
-        setRowValues(sheet, lastRow++, 1, [ values ]);
+        setRowValues(logDetailsSheet, lastRow++, 1, [ values ]);
     }
 }
 
@@ -533,123 +343,103 @@ function logIngredients(foodSheet, data, date) {
 // - YELLOW if the actual <= the goal + range
 // - ORANGE if the actual <= the goal + (range * 2)
 // - RED if the actual > the goal + (range * 2)
-function maximum(sheet, actualCellCoordinates, goalCellCoordinates, range) {
-    // Get the actual from the actual cell
-    let actualCell = sheet.getRange(actualCellCoordinates.row, actualCellCoordinates.column);
-    let actual = actualCell.getValue();
+function maximum(sheet, goalCell, actualCell, range) {
+    let goal = getCellValue(sheet, goalCell);
+    let actual = getCellValue(sheet, actualCell);
 
-    // Get the goal from the goal cell
-    let goalCell = sheet.getRange(goalCellCoordinates.row, goalCellCoordinates.column);
-    let goal = goalCell.getValue();
-
-    let color = getMaximumColor(actual, goal, range);
-    actualCell.setBackground(color);
-}
-
-
-function getMaximumColor(actual, goal, range) {
     if (actual <= goal) {
-        return GREEN;
+        sheet.getRange(actualCell.row, actualCell.column).setBackground(GREEN);
+        return;
     }
 
     if (actual <= (goal + range)) {
-        return YELLOW;
+        sheet.getRange(actualCell.row, actualCell.column).setBackground(YELLOW);
+        return;
     }
 
     if (actual <= (goal + (range * 2))) {
-        return ORANGE;
+        sheet.getRange(actualCell.row, actualCell.column).setBackground(ORANGE);
+        return;
     }
 
-    return RED;
+    sheet.getRange(actualCell.row, actualCell.column).setBackground(RED);
 }
 
 
 // The background of the actuals using the "optimal" algorithm are
 // colored as follows:
-// - GREEN if the actual >= the goal - range and <= goal + range
+// - GREEN  if the actual >= the goal - range       and <= goal + range
 // - YELLOW if the actual >= the goal - (range * 2) and <= goal + (range * 2)
 // - ORANGE if the actual >= the goal - (range * 3) and <= goal + (range * 3)
-// - RED if the actual > the goal + (range * 2)
-function optimal(sheet, actualCellCoordinates, goalCellCoordinates, range) {
-    // Get the actual from the actual cell
-    let actualCell = sheet.getRange(actualCellCoordinates.row, actualCellCoordinates.column);
-    let actual = actualCell.getValue();
+// - RED    if the actual <  the goal - (range * 3) and >  goal + (range * 3)
+function optimal(sheet, goalCell, actualCell, thresholdRange) {
+    let goal = getCellValue(sheet, goalCell);
+    let actual = getCellValue(sheet, actualCell);
 
-    // Get the goal from the goal cell
-    let goalCell = sheet.getRange(goalCellCoordinates.row, goalCellCoordinates.column);
-    let goal = goalCell.getValue();
-
-    let color = getOptimalColor(actual, goal, range);
-    actualCell.setBackground(color);
-}
-
-
-function getOptimalColor(actual, goal, range) {
-    if (actual >= (goal - range) && actual <= (goal + range)) {
-        return GREEN;
+    // GREEN if the actual >= the goal - range and <= goal + range
+    if (actual >= (goal - thresholdRange) && actual <= (goal + thresholdRange)) {
+        sheet.getRange(actualCell.row, actualCell.column).setBackground(GREEN);
+        return;
     }
 
-    if (actual >= (goal - (range * 2)) && actual <= (goal + (range * 2))) {
-        return YELLOW;
+    // YELLOW if the actual >= the goal - (range * 2) and <= goal + (range * 2)
+    if (actual >= (goal - (thresholdRange * 2)) && actual <= (goal + (thresholdRange * 2))) {
+        sheet.getRange(actualCell.row, actualCell.column).setBackground(YELLOW);
+        return;
     }
 
-    if (actual >= (goal - (range * 3)) && actual <= (goal + (range * 3))) {
-        return ORANGE;
+    // ORANGE if the actual >= the goal - (range * 3) and <= goal + (range * 3)
+    if (actual >= (goal - (thresholdRange * 3)) && actual <= (goal + (thresholdRange * 3))) {
+        sheet.getRange(actualCell.row, actualCell.column).setBackground(ORANGE);
+        return;
     }
 
-    return RED;
+    // RED if the actual < the goal - (range * 3) and > goal + (range * 3)
+    sheet.getRange(actualCell.row, actualCell.column).setBackground(RED);
 }
 
 
 // The background of the actuals using the minimum algorithm are colored
 // as follows:
 // - GREEN if the actual >= the goal
-// - YELLOW if the actual >= the goal - range
-// - ORANGE if the actual >= the goal - (range * 2)
-// - RED if the actual < the goal - (range * 2)
-function minimum(sheet, actualCellCoordinates, goalCellCoordinates, range) {
-    // Get the actual from the actual cell
-    let actualCell = sheet.getRange(actualCellCoordinates.row, actualCellCoordinates.column);
-    let actual = actualCell.getValue();
+// - YELLOW if the actual >= the goal - thresholdRange
+// - ORANGE if the actual >= the goal - (thresholdRange * 2)
+// - RED if the actual < the goal - (thresholdRange * 2)
+function minimum(sheet, goalCell, actualCell, thresholdRange) {
+    let goal = getCellValue(sheet, goalCell);
+    let actual = getCellValue(sheet, actualCell);
 
-    // Get the goal from the goal cell
-    let goalCell = sheet.getRange(goalCellCoordinates.row, goalCellCoordinates.column);
-    let goal = goalCell.getValue();
-
-    let color = getMinimumColor(actual, goal, range);
-    actualCell.setBackground(color);
-}
-
-
-function getMinimumColor(actual, goal, range) {
     if (actual >= goal) {
-        return GREEN;
+        sheet.getRange(actualCell.row, actualCell.column).setBackground(GREEN);
+        return;
     }
 
-    if (actual >= (goal - range)) {
-        return YELLOW;
+    if (actual >= (goal - thresholdRange)) {
+        sheet.getRange(actualCell.row, actualCell.column).setBackground(YELLOW);
+        return;
     }
 
-    if (actual >= (goal - (range * 2))) {
-        return ORANGE;
+    if (actual >= (goal - (thresholdRange * 2))) {
+        sheet.getRange(actualCell.row, actualCell.column).setBackground(ORANGE);
+        return;
     }
 
-    return RED;
+    sheet.getRange(actualCell.row, actualCell.column).setBackground(RED);
 }
 
 
-function getLogSheet(sheet, name) {
+function getSheet(name) {
     return SpreadsheetApp.getActiveSpreadsheet().getSheetByName(name);
 }
 
 
-function getValue(sheet, row, col) {
-    return sheet.getRange(row, col).getValue();
+function getCellValue(sheet, cell) {
+    return sheet.getRange(cell.row, cell.column).getValue();
 }
 
 
-function setValue(sheet, row, col, value) {
-    let range = sheet.getRange(row, col);
+function setCellValue(sheet, cell, value) {
+    let range = sheet.getRange(cell.row, cell.column);
     range.setValue(value);
 }
 
@@ -660,9 +450,10 @@ function setRowValues(sheet, row, col, values) {
 }
 
 
-function createFilter(sheet) {
+// TODO: I need to recall why I'm creating a filter
+function createSpreadsheetWideFilter(sheet) {
     if (!sheet.getFilter()) {
-        sheet.getRange(RANGE).createFilter();
+        sheet.getRange(plan.range).createFilter();
     }
 }
 
@@ -679,4 +470,78 @@ function filterEmptyCellsOutOfColumn(sheet, column) {
 
 function removeFilterFromColumn(sheet, column) {
     sheet.getFilter().removeColumnFilterCriteria(column);
+}
+
+
+function getProperty(name) {
+    return PropertiesService.getScriptProperties().getProperty(name);
+}
+
+
+function setProperty(name, value) {
+    PropertiesService.getScriptProperties().setProperty(name, value);
+}
+
+
+function getRangeInfo(range) {
+    let topLeft = range.substring(0, range.indexOf(':'));
+    console.log(topLeft);
+    let bottomRight = range.substring(range.indexOf(':') + 1);
+    return {
+        topLeft: getCellInfo(topLeft),
+        bottomRight: getCellInfo(bottomRight)
+    }
+}
+
+
+function getCellInfo(cell) {
+    let count = 0;
+    let columnString = '';
+    for (let ch of cell) {
+        if (ch >= 'A' && ch <= 'Z') {
+            columnString += ch;
+            count++;
+        }
+    }
+
+    let column;
+    switch (columnString.length) {
+    case 1:
+        column = columnString.charCodeAt(0) - 64;
+        break;
+    case 2:
+        column = ((columnString.charCodeAt(0) - 64) * 26) + (columnString.charCodeAt(1) - 64);
+        break;
+    }
+
+    let rowString = cell.substring(count);
+
+    return {
+        column: column,
+        row: parseInt(rowString)
+    }
+}
+
+
+function getColumn(cell) {
+    let count = 0;
+    let columnString = '';
+    for (let ch of cell) {
+        if (ch >= 'A' && ch <= 'Z') {
+            columnString += ch;
+            count++;
+        }
+    }
+
+    let column;
+    switch (columnString.length) {
+    case 1:
+        column = columnString.charCodeAt(0) - 64;
+        break;
+    case 2:
+        column = ((columnString.charCodeAt(0) - 64) * 26) + (columnString.charCodeAt(1) - 64);
+        break;
+    }
+
+    return column;
 }
